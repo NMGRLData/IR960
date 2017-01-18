@@ -1,0 +1,3876 @@
+do run
+loading script "felix_ic_peak_hop.py"
+loading script "felix_pump_ms.py"
+loading script "felix_air_x1.py"
+loading script "felix_pump_extraction_line.py"
+testing...
+no interpolation path defined
+executed 135.88
+script duration name:ic_peak_hop seconds:136.0
+loading script "felix_ic_peak_hop.py"
+loading script "felix_pump_ms.py"
+loading script "felix_air_x1.py"
+loading script "felix_pump_extraction_line.py"
+testing...
+no interpolation path defined
+executed 0
+loading script "felix_ic_peak_hop.py"
+loading script "felix_pump_ms.py"
+loading script "felix_air_x1.py"
+loading script "felix_pump_extraction_line.py"
+testing...
+no interpolation path defined
+calculate duration
+testing...
+no interpolation path defined
+executed 0
+calculate duration
+testing...
+no interpolation path defined
+executed 0
+calculate duration
+testing...
+no interpolation path defined
+executed 32.0
+calculate duration
+testing...
+no interpolation path defined
+executed 34.0
+calculate duration
+testing...
+no interpolation path defined
+executed 2.0
+calculate duration
+testing...
+no interpolation path defined
+executed 34.0
+executed 102.0
+script duration name:air_x1 seconds:102.0
+loading script "felix_ic_peak_hop.py"
+loading script "felix_pump_ms.py"
+loading script "felix_air_x1.py"
+loading script "felix_pump_extraction_line.py"
+testing...
+no interpolation path defined
+calculate duration
+testing...
+no interpolation path defined
+executed 4.0
+executed 4.0
+Script duration 238.0
+Run total estimated duration= 239.000
+run duration: 0:03:59
+doing event level: 2
+08:10:58 -- Setting default integration. t=1.048576
+setting integration time = 1.048576
+SetIntegrationTime 1.048576 ===>> OK
+----------------- start -----------------
+**************** Experiment Type: Ar/Ar, Ar/Ar
+create new session 4902630416
+close session 4902630416
+$$$$$ Clearing conditionals
+adding conditionals 
+Add queue conditionals
+add default conditionals
+adding default conditionals from /Users/obama/PychronDev/setupfiles/spectrometer/default_conditionals.yaml
+Start automated run ic-01-F-55
+loading script "felix_ic_peak_hop.py"
+loading script "felix_pump_ms.py"
+loading script "felix_air_x1.py"
+loading script "felix_pump_extraction_line.py"
+%%%%%%%%%%%%%%%%%% setting automated run ic-01-F-55
+No value "sensitivity_multiplier" in metadata
+$$$$$$$$$$$$$$$ auto_save_detector_ic=False
+No metadata section in "felix_ic_peak_hop.py". Using default "None" value for "default_fits"
+============================= Pre Extraction Check =============================
+loading queue conditionals pre_run_terminations
+loading system conditionals pre_run_terminations
+loading conditionals from /Users/obama/PychronDev/setupfiles/spectrometer/default_conditionals.yaml
+08:10:58 -- ******* Pre Extraction Check *******
+Get a measurement from the spectrometer
+GetData ===>> L2(CDD),0.000471734112749906,H2,0.0446913799835079,H1,0.125498682723387,AX,-0.0956015867863178,L1...
+Pre Extraction Termination data. keys=L2(CDD),H2,H1,AX,L1, signals=0.00047,0.04469,0.12550,-0.09560,0.02777
+08:10:58 -- testing system defined conditionals
+Checking default pre extraction terminations n=2
+testing L2_CDD_
+evaluate ot="L2(CDD).inactive" t="L2_CDD_", ctx="{'L2_CDD_': False}"
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+08:10:58 -- ******* Pre Extraction Check Passed *******
+=================================================================================
+08:10:58 -- stopping status monitor
+stop 4911345840
+Status monitor stopped
+Status monitor finished
+08:10:59 -- starting status monitor
+start 4911345840
+StatusMonitor period=1. Frequencies(state=1, checksum=3, lock=5, owner=5)
+start extraction
+do extraction
+Analysis started at 08:11:01.308287
+Extraction Started felix_air_x1.py
+08:11:01 -- ******* Extraction Started felix_air_x1.py *******
+state changed from not run to extraction
+DO EXTRACTION <pychron.extraction_line.pyscript_runner.RemotePyScriptRunner object at 0x125491890>
+testing...
+no interpolation path defined
+calculate duration
+testing...
+no interpolation path defined
+executed 0
+calculate duration
+testing...
+no interpolation path defined
+executed 0
+calculate duration
+testing...
+no interpolation path defined
+executed 32.0
+calculate duration
+testing...
+no interpolation path defined
+executed 34.0
+calculate duration
+testing...
+no interpolation path defined
+executed 2.0
+calculate duration
+testing...
+no interpolation path defined
+executed 34.0
+executed 102.0
+Air Pipette x1
+doing GOSUB
+testing...
+no interpolation path defined
+executed 0
+Waiting for minibone access
+wait ('JanMiniboneFlag', 0) {}
+waiting for JanMiniboneFlag = 0
+Read JanMiniboneFlag ===>> 0
+finished waiting
+Minibone released
+wait ('MinibonePumpTimeFlag', 0) {}
+waiting for MinibonePumpTimeFlag = 0
+Read MinibonePumpTimeFlag ===>> 0
+finished waiting
+acquire ('FelixMiniboneFlag',) {'clear': True}
+acquire FelixMiniboneFlag
+Set FelixMiniboneFlag 1 ===>> OK
+FelixMiniboneFlag acquired
+set extraction state False (0.75, 'red', 1.5)
+minibone acquired
+executed 0
+WaitForMiniboneAccess.py completed successfully
+gosub finished
+doing GOSUB
+testing...
+no interpolation path defined
+executed 0
+Prepare for Air Shot
+close () {'description': 'Felix Inlet'}
+closing name=--- desc=Felix Inlet
+checking ownership. requestor=129.138.12.137
+check software interlocks H
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel False
+Close H ===>> OK
+GetValveState H ===>> False
+change switch state (True, True)
+update switch state H False args=() kw={} ncanvase=4
+08:11:01 -- CLOSE  VALVE-H (Felix Inlet)
+---------------------------------------- close None (Felix Inlet) result=[(True, True)]
+action=close, ok=True, locked=[False]
+open () {'description': 'Felix Ion Pump'}
+opening name=--- desc=Felix Ion Pump
+checking ownership. requestor=129.138.12.137
+check software interlocks V
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel False
+Open V ===>> OK
+GetValveState V ===>> OK
+change switch state (True, True)
+update switch state V True args=() kw={} ncanvase=4
+08:11:01 -- OPEN   VALVE-V (Felix Ion Pump)
+---------------------------------------- open None (Felix Ion Pump) result=[(True, True)], time=0.12 sec
+action=open, ok=True, locked=[False]
+close () {'description': 'Microbone to Minibone'}
+closing name=--- desc=Microbone to Minibone
+checking ownership. requestor=129.138.12.137
+check software interlocks L
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel False
+Close L ===>> OK
+GetValveState L ===>> False
+change switch state (True, True)
+update switch state L False args=() kw={} ncanvase=4
+Get Checksum: -333605687
+08:11:02 -- CLOSE  VALVE-L (Microbone to Minibone)
+---------------------------------------- close None (Microbone to Minibone) result=[(True, True)]
+action=close, ok=True, locked=[False]
+close () {'description': 'Quad Inlet'}
+closing name=--- desc=Quad Inlet
+checking ownership. requestor=129.138.12.137
+check software interlocks Q
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel True
+Close Q ===>> OK
+GetValveState Q ===>> False
+change switch state (True, True)
+update switch state Q False args=() kw={} ncanvase=4
+08:11:03 -- CLOSE  VALVE-Q (Quad Inlet)
+---------------------------------------- close None (Quad Inlet) result=[(True, True)]
+action=close, ok=True, locked=[False]
+open () {'description': 'Bone to Turbo'}
+opening name=--- desc=Bone to Turbo
+checking ownership. requestor=129.138.12.137
+check software interlocks C
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel False
+Open C ===>> OK
+GetValveState C ===>> OK
+change switch state (True, True)
+update switch state C True args=() kw={} ncanvase=4
+08:11:03 -- OPEN   VALVE-C (Bone to Turbo)
+---------------------------------------- open None (Bone to Turbo) result=[(True, True)], time=0.19 sec
+action=open, ok=True, locked=[False]
+open () {'description': 'Bone to Minibone'}
+opening name=--- desc=Bone to Minibone
+checking ownership. requestor=129.138.12.137
+check software interlocks E
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel False
+Open E ===>> OK
+GetValveState E ===>> OK
+change switch state (True, True)
+update switch state E True args=() kw={} ncanvase=4
+08:11:04 -- OPEN   VALVE-E (Bone to Minibone)
+---------------------------------------- open None (Bone to Minibone) result=[(True, True)], time=0.17 sec
+action=open, ok=True, locked=[False]
+open () {'description': 'Minibone to Bone'}
+opening name=--- desc=Minibone to Bone
+checking ownership. requestor=129.138.12.137
+check software interlocks I
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel True
+Open I ===>> OK
+set states for children of I. state=True
+handle state [('I', True)]
+update switch state I True args=() kw={'refresh': False} ncanvase=4
+GetValveState I ===>> OK
+change switch state (True, True)
+update switch state I True args=() kw={} ncanvase=4
+08:11:04 -- OPEN   VALVE-I (Minibone to Bone)
+---------------------------------------- open None (Minibone to Bone) result=[(True, True)], time=0.46 sec
+refresh_canvas_needed fired
+action=open, ok=True, locked=[False]
+open () {'description': 'Bone to Getter GP-50'}
+opening name=--- desc=Bone to Getter GP-50
+checking ownership. requestor=129.138.12.137
+check software interlocks N
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel False
+Open N ===>> OK
+GetValveState N ===>> OK
+change switch state (True, True)
+update switch state N True args=() kw={} ncanvase=4
+08:11:05 -- OPEN   VALVE-N (Bone to Getter GP-50)
+---------------------------------------- open None (Bone to Getter GP-50) result=[(True, True)], time=0.17 sec
+action=open, ok=True, locked=[False]
+close () {'description': 'Bone to CO2 Laser'}
+closing name=--- desc=Bone to CO2 Laser
+checking ownership. requestor=129.138.12.137
+check software interlocks D
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel True
+Close D ===>> OK
+GetValveState D ===>> False
+change switch state (True, True)
+update switch state D False args=() kw={} ncanvase=4
+08:11:05 -- CLOSE  VALVE-D (Bone to CO2 Laser)
+---------------------------------------- close None (Bone to CO2 Laser) result=[(True, True)]
+Get Checksum: -1394873004
+action=close, ok=True, locked=[False]
+close () {'description': 'Bone to Diode Laser'}
+closing name=--- desc=Bone to Diode Laser
+checking ownership. requestor=129.138.12.137
+check software interlocks B
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel True
+Close B ===>> OK
+GetValveState B ===>> False
+change switch state (True, True)
+update switch state B False args=() kw={} ncanvase=4
+08:11:06 -- CLOSE  VALVE-B (Bone to Diode Laser)
+---------------------------------------- close None (Bone to Diode Laser) result=[(True, True)]
+action=close, ok=True, locked=[False]
+executed 0
+PrepareForAirShot.py completed successfully
+gosub finished
+doing GOSUB
+testing...
+no interpolation path defined
+executed 32.0
+Evacuate Pipette 2
+open () {'description': 'Minibone to Turbo'}
+opening name=--- desc=Minibone to Turbo
+checking ownership. requestor=129.138.12.137
+check software interlocks P
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel False
+Open P ===>> OK
+GetValveState P ===>> OK
+change switch state (True, True)
+update switch state P True args=() kw={} ncanvase=4
+08:11:06 -- OPEN   VALVE-P (Minibone to Turbo)
+---------------------------------------- open None (Minibone to Turbo) result=[(True, True)], time=0.16 sec
+action=open, ok=True, locked=[False]
+close () {'description': 'Inner Pipette 2'}
+closing name=--- desc=Inner Pipette 2
+checking ownership. requestor=129.138.12.137
+check software interlocks Z
+interlocks ['Y']
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel False
+Close Z ===>> OK
+GetValveState Z ===>> False
+change switch state (True, True)
+update switch state Z False args=() kw={} ncanvase=4
+08:11:07 -- CLOSE  VALVE-Z (Inner Pipette 2)
+---------------------------------------- close None (Inner Pipette 2) result=[(True, True)]
+action=close, ok=True, locked=[False]
+sleep (1,) {}
+SLEEP 1.0
+open () {'description': 'Outer Pipette 2'}
+opening name=--- desc=Outer Pipette 2
+checking ownership. requestor=129.138.12.137
+check software interlocks Y
+interlocks ['Z']
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel True
+Open Y ===>> OK
+GetValveState Y ===>> OK
+change switch state (True, True)
+update switch state Y True args=() kw={} ncanvase=4
+08:11:08 -- OPEN   VALVE-Y (Outer Pipette 2)
+---------------------------------------- open None (Outer Pipette 2) result=[(True, True)], time=0.23 sec
+Get Checksum: 1349286382
+action=open, ok=True, locked=[False]
+sleep (15,) {}
+SLEEP 15.0
+block started
+WaitControl setup for 15.0  
+Get Checksum: 1349286382
+Get Checksum: 1349286382
+Get Checksum: 1349286382
+Get Checksum: 1349286382
+Join finished
+block finished. duration 15.0499989986
+executed 48.0
+EvacPipette2.py completed successfully
+gosub finished
+doing GOSUB
+testing...
+no interpolation path defined
+executed 34.0
+Fill Pipette 2
+close () {'description': 'Outer Pipette 2'}
+closing name=--- desc=Outer Pipette 2
+checking ownership. requestor=129.138.12.137
+check software interlocks Y
+interlocks ['Z']
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel True
+Close Y ===>> OK
+set states for children of Y. state=False
+handle state [('Y', False)]
+update switch state Y False args=() kw={'refresh': False} ncanvase=4
+GetValveState Y ===>> False
+change switch state (True, True)
+refresh_canvas_needed fired
+update switch state Y False args=() kw={} ncanvase=4
+Get Checksum: -2041565936
+08:11:24 -- CLOSE  VALVE-Y (Outer Pipette 2)
+---------------------------------------- close None (Outer Pipette 2) result=[(True, True)]
+action=close, ok=True, locked=[False]
+sleep (1,) {}
+SLEEP 1.0
+filling air pipette
+open () {'description': 'Inner Pipette 2'}
+opening name=--- desc=Inner Pipette 2
+checking ownership. requestor=129.138.12.137
+check software interlocks Z
+interlocks ['Y']
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel True
+Open Z ===>> OK
+GetValveState Z ===>> OK
+change switch state (True, True)
+update switch state Z True args=() kw={} ncanvase=4
+08:11:25 -- OPEN   VALVE-Z (Inner Pipette 2)
+---------------------------------------- open None (Inner Pipette 2) result=[(True, True)], time=0.13 sec
+action=open, ok=True, locked=[False]
+sleep (15,) {}
+SLEEP 15.0
+block started
+WaitControl setup for 15.0  
+Get Checksum: 1368144632
+Get Checksum: 1368144632
+Get Checksum: 1368144632
+Get Checksum: 1368144632
+Get Checksum: 1368144632
+Join finished
+block finished. duration 15.043571949
+close () {'description': 'Inner Pipette 2'}
+closing name=--- desc=Inner Pipette 2
+checking ownership. requestor=129.138.12.137
+check software interlocks Z
+interlocks ['Y']
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel True
+Close Z ===>> OK
+GetValveState Z ===>> False
+change switch state (True, True)
+update switch state Z False args=() kw={} ncanvase=4
+08:11:41 -- CLOSE  VALVE-Z (Inner Pipette 2)
+---------------------------------------- close None (Inner Pipette 2) result=[(True, True)]
+action=close, ok=True, locked=[False]
+sleep (1,) {}
+SLEEP 1.0
+executed 51.0
+FillPipette2.py completed successfully
+gosub finished
+doing GOSUB
+testing...
+no interpolation path defined
+executed 2.0
+Prepare for air expansion
+close () {'description': 'Bone to Turbo'}
+closing name=--- desc=Bone to Turbo
+checking ownership. requestor=129.138.12.137
+check software interlocks C
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel True
+Close C ===>> OK
+Get Checksum: -518093733
+State checksums do not match. Local:-2041565936 Remote:-518093733
+State checksum failed
+GetValveState C ===>> False
+change switch state (True, True)
+update switch state C False args=() kw={} ncanvase=4
+08:11:42 -- CLOSE  VALVE-C (Bone to Turbo)
+---------------------------------------- close None (Bone to Turbo) result=[(True, True)]
+action=close, ok=True, locked=[False]
+sleep (1,) {}
+SLEEP 1.0
+open () {'description': 'Bone to Minibone'}
+opening name=--- desc=Bone to Minibone
+checking ownership. requestor=129.138.12.137
+check software interlocks E
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel False
+Open E ===>> OK
+GetValveState E ===>> OK
+change switch state (True, True)
+update switch state E True args=() kw={} ncanvase=4
+08:11:43 -- OPEN   VALVE-E (Bone to Minibone)
+---------------------------------------- open None (Bone to Minibone) result=[(True, True)], time=0.17 sec
+action=open, ok=True, locked=[False]
+open () {'description': 'Minibone to Bone'}
+opening name=--- desc=Minibone to Bone
+checking ownership. requestor=129.138.12.137
+check software interlocks I
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel False
+Open I ===>> OK
+GetValveState I ===>> OK
+change switch state (True, True)
+update switch state I True args=() kw={} ncanvase=4
+08:11:44 -- OPEN   VALVE-I (Minibone to Bone)
+---------------------------------------- open None (Minibone to Bone) result=[(True, True)], time=0.47 sec
+action=open, ok=True, locked=[False]
+executed 3.0
+PrepareForAirShotExpansion.py completed successfully
+gosub finished
+doing GOSUB
+testing...
+no interpolation path defined
+executed 34.0
+Expand Pipette 2
+close () {'description': 'Minibone to Turbo'}
+closing name=--- desc=Minibone to Turbo
+checking ownership. requestor=129.138.12.137
+check software interlocks P
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel True
+Close P ===>> OK
+GetValveState P ===>> False
+change switch state (True, True)
+update switch state P False args=() kw={} ncanvase=4
+08:11:45 -- CLOSE  VALVE-P (Minibone to Turbo)
+---------------------------------------- close None (Minibone to Turbo) result=[(True, True)]
+action=close, ok=True, locked=[False]
+sleep (2,) {}
+SLEEP 2.0
+block started
+WaitControl setup for 2.0  
+Get Checksum: 2037967168
+Join finished
+block finished. duration 2.00928902626
+open () {'description': 'Outer Pipette 2'}
+opening name=--- desc=Outer Pipette 2
+checking ownership. requestor=129.138.12.137
+check software interlocks Y
+interlocks ['Z']
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel True
+Open Y ===>> OK
+set states for children of Y. state=True
+handle state [('Y', True)]
+update switch state Y True args=() kw={'refresh': False} ncanvase=4
+refresh_canvas_needed fired
+GetValveState Y ===>> OK
+increment shot count 3626
+saved current shot count 3626
+change switch state (True, True)
+update switch state Y True args=() kw={} ncanvase=4
+08:11:47 -- OPEN   VALVE-Y (Outer Pipette 2)
+---------------------------------------- open None (Outer Pipette 2) result=[(True, True)], time=0.39 sec
+action=open, ok=True, locked=[False]
+sleep (15,) {}
+SLEEP 15.0
+block started
+WaitControl setup for 15.0  
+Get Checksum: 2009225527
+Get Checksum: 2009225527
+Get Checksum: 2009225527
+Get Checksum: 2009225527
+Get Checksum: 2009225527
+Join finished
+block finished. duration 15.0475840569
+executed 51.0
+ExpandPipette2.py completed successfully
+gosub finished
+close () {'description': 'Outer Pipette 2'}
+closing name=--- desc=Outer Pipette 2
+checking ownership. requestor=129.138.12.137
+check software interlocks Y
+interlocks ['Z']
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel True
+Close Y ===>> OK
+GetValveState Y ===>> False
+change switch state (True, True)
+update switch state Y False args=() kw={} ncanvase=4
+08:12:03 -- CLOSE  VALVE-Y (Outer Pipette 2)
+---------------------------------------- close None (Outer Pipette 2) result=[(True, True)]
+action=close, ok=True, locked=[False]
+executed 102.0
+felix_air_x1.py completed successfully
+GetAchievedOutput ===>> No Response
+Requested Output= 0.000
+Achieved Output=  0.000
+GetResponseBlob ===>> [228][254][176]N[00][00][00][00][192][216][166]=[00][00][250]D[213]'[05]@[00][00][250]D[246][140]...
+GetOutputBlob ===>> [228][254][176]N[00][00][00][00][192][216][166]=[169][176][229]A[213]'[05]@[00][00][00][00][246][...
+persistence save...
+persistence save - db
+AutomatedRunPersister post_extraction_save deprecated
+persistence save - dvc
+no extraction position for 
+create new session 4873042928
+close session 4873042928
+Extraction Finished
+08:12:03 -- ******* Extraction Finished *******
+no overlap. not waiting for min ms pumptime
+08:12:03 -- Sending spectrometer configuration
+======== Sending configuration ========
+SetZFocus 9.84 ===>> OK
+SetHV 9000.0 ===>> OK
+SetZSymmetry 18.34 ===>> OK
+SetExtractionLens 42.35 ===>> OK
+SetIonRepeller -4.08 ===>> OK
+SetElectronEnergy 107.0 ===>> OK
+SetYSymmetry 12.72 ===>> OK
+send trap current 400.0
+GetParameter Trap Current Readback ===>> 398.53177073796
+SetParameter Trap Current Set,400.0 ===>> OK
+updating mftable name argon
+Using mftable located at /Users/obama/PychronDev/setupfiles/spectrometer/mftables/argon.csv
+============ MFtable ===========
+Isotope  H2     H1     AX     L1     L2     L2(CDD)
+Ar40     3.4937 3.5650 3.6392 3.7162 3.8120 3.7986
+Ar39     3.4247 3.4950 3.5678 3.6461 3.7372 3.7234
+Ar36     3.2146 3.2809 3.3493 3.4210 3.5178 3.4951
+================================
+get initial guess parabolic
+get initial guess parabolic
+get initial guess parabolic
+get initial guess parabolic
+get initial guess parabolic
+get initial guess parabolic
+======== Configuration Finished ========
+GetYSymmetry ===>> 12.72
+GetZSymmetry ===>> 18.34
+GetParameter Trap Current Readback ===>> 398.41988646768
+GetHighVoltage ===>> 9000
+start measurement
+do measurement
+L#=ic-01-F analysis type=detector_ic
+Measurement Started felix_ic_peak_hop.py
+08:12:03 -- ******* Measurement Started felix_ic_peak_hop.py *******
+state changed from extraction to measurement
+setting spec, defl, and gains
+GetExtractionLens ===>> 42.35
+GetYSymmetry ===>> 12.72
+GetZSymmetry ===>> 18.34
+Get Checksum: 2037967168
+GetZFocus ===>> 9.84
+GetDeflection H2 (CDD) ===>> 3250
+GetDeflection H1 (CDD) ===>> 3250
+GetDeflection AX (CDD) ===>> 3250
+GetDeflection L1 (CDD) ===>> 3250
+GetDeflection L2 (CDD) ===>> 0
+GetGain H2 ===>> 0.9809305
+GetGain H1 ===>> 0.96484
+GetGain AX ===>> 0.96253
+GetGain L1 ===>> 0.970094835296087
+GetGain L2 ===>> 0.967359864778375
+GetGain H2(CDD) ===>> 0
+GetGain H1(CDD) ===>> 0
+GetGain AX(CDD) ===>> 0
+GetGain L1(CDD) ===>> 0
+GetGain L2(CDD) ===>> 0
+pre measurement save
+New frame /Users/obama/PychronDev/data/isotopes/39/f33bf2-79e6-4d7c-a848-35d959b4cf04.h5
+flush and close file /Users/obama/PychronDev/data/isotopes/39/f33bf2-79e6-4d7c-a848-35d959b4cf04.h5
+testing...
+no interpolation path defined
+setting detector H2 to Ar40 (39.9624)
+setting detector H1 to Ar39 (38.8624)
+setting detector AX to Ar38 (37.9624)
+setting detector L1 to Ar37 (36.9624)
+setting detector L2 to Ar36 (35.8624)
+setting detector H2(CDD) to Ar40 (39.8624)
+setting detector H1(CDD) to Ar39 (38.8624)
+setting detector AX(CDD) to Ar38 (37.8624)
+setting detector L1(CDD) to Ar37 (36.8624)
+setting detector L2(CDD) to Ar36 (35.9624)
+setting detector H2 to Ar40 (40.064)
+setting detector H1 to Ar39 (38.964)
+setting detector AX to Ar38 (38.064)
+setting detector L1 to Ar37 (37.064)
+setting detector L2 to Ar36 (35.964)
+setting detector H2(CDD) to Ar40 (39.964)
+setting detector H1(CDD) to Ar39 (38.964)
+setting detector AX(CDD) to Ar38 (37.964)
+setting detector L1(CDD) to Ar37 (36.964)
+setting detector L2(CDD) to Ar36 (36.064)
+setting detector H2 to Ar40 (39.9627)
+setting detector H1 to Ar39 (38.8627)
+setting detector AX to Ar38 (37.9627)
+setting detector L1 to Ar37 (36.9627)
+setting detector L2 to Ar36 (35.8627)
+setting detector H2(CDD) to Ar40 (39.8627)
+setting detector H1(CDD) to Ar39 (38.8627)
+setting detector AX(CDD) to Ar38 (37.8627)
+setting detector L1(CDD) to Ar37 (36.8627)
+setting detector L2(CDD) to Ar36 (35.9627)
+setting detector H2 to Ar40 (39.9668)
+setting detector H1 to Ar39 (38.8668)
+setting detector AX to Ar38 (37.9668)
+setting detector L1 to Ar37 (36.9668)
+setting detector L2 to Ar36 (35.8668)
+setting detector H2(CDD) to Ar40 (39.8668)
+setting detector H1(CDD) to Ar39 (38.8668)
+setting detector AX(CDD) to Ar38 (37.8668)
+setting detector L1(CDD) to Ar37 (36.8668)
+setting detector L2(CDD) to Ar36 (35.9668)
+executed 205.88
+unknown measurement script
+load_hops ('hops/ic_hops.txt',) {}
+[{'counts': 10, 'settle': 5, 'positioning': {'detector': 'H2', 'isotope': 'Ar40'}, 'cup_configuration': [{'protect': False, 'is_baseline': False, 'isotope': 'Ar40', 'deflection': None, 'active': True, 'detector': 'H2'}]}, {'counts': 10, 'settle': 5, 'positioning': {'detector': 'H1', 'isotope': 'Ar40'}, 'cup_configuration': [{'protect': False, 'is_baseline': False, 'isotope': 'Ar40', 'deflection': None, 'active': True, 'detector': 'H1'}]}, {'counts': 10, 'settle': 5, 'positioning': {'detector': 'AX', 'isotope': 'Ar40'}, 'cup_configuration': [{'protect': False, 'is_baseline': False, 'isotope': 'Ar40', 'deflection': None, 'active': True, 'detector': 'AX'}]}, {'counts': 10, 'settle': 5, 'positioning': {'detector': 'L1', 'isotope': 'Ar40'}, 'cup_configuration': [{'protect': False, 'is_baseline': False, 'isotope': 'Ar40', 'deflection': None, 'active': True, 'detector': 'L1'}]}]
+define_hops ([{'counts': 10, 'settle': 5, 'positioning': {'detector': 'H2', 'isotope': 'Ar40'}, 'cup_configuration': [{'protect': False, 'is_baseline': False, 'isotope': 'Ar40', 'deflection': None, 'active': True, 'detector': 'H2'}]}, {'counts': 10, 'settle': 5, 'positioning': {'detector': 'H1', 'isotope': 'Ar40'}, 'cup_configuration': [{'protect': False, 'is_baseline': False, 'isotope': 'Ar40', 'deflection': None, 'active': True, 'detector': 'H1'}]}, {'counts': 10, 'settle': 5, 'positioning': {'detector': 'AX', 'isotope': 'Ar40'}, 'cup_configuration': [{'protect': False, 'is_baseline': False, 'isotope': 'Ar40', 'deflection': None, 'active': True, 'detector': 'AX'}]}, {'counts': 10, 'settle': 5, 'positioning': {'detector': 'L1', 'isotope': 'Ar40'}, 'cup_configuration': [{'protect': False, 'is_baseline': False, 'isotope': 'Ar40', 'deflection': None, 'active': True, 'detector': 'L1'}]}],) {}
+*************** Set Analysis View Ar/Ar
+equilibrate () {'delay': 3.0, 'inlet': 'H', 'outlet': 'V', 'eqtime': 35.0}
+Equilibration Started
+08:12:04 -- ******* Equilibration Started *******
+checking ownership. requestor=129.138.12.137
+check software interlocks V
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel True
+Close V ===>> OK
+GetValveState V ===>> False
+change switch state (True, True)
+update switch state V False args=() kw={} ncanvase=4
+08:12:04 -- CLOSE  VALVE-V (Felix Ion Pump)
+waiting 3.0s before opening inlet value ('H',)
+set states for children of O. state=True
+handle state [('O', True)]
+update switch state O True args=() kw={'refresh': False} ncanvase=4
+refresh_canvas_needed fired
+Get Checksum: 678225031
+checking ownership. requestor=129.138.12.137
+check software interlocks H
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel True
+Open H ===>> OK
+GetValveState H ===>> OK
+change switch state (True, True)
+update switch state H True args=() kw={} ncanvase=4
+08:12:07 -- OPEN   VALVE-H (Felix Inlet)
+equilibrating for 35.0sec
+set_time_zero () {}
+sleep (34.0,) {}
+SLEEP 34.0
+block started
+WaitControl setup for 34.0  
+Get Checksum: -919093432
+Get Checksum: -919093432
+Get Checksum: -919093432
+Get Checksum: -919093432
+Get Checksum: -919093432
+Get Checksum: -919093432
+Get Checksum: -919093432
+Get Checksum: -919093432
+Get Checksum: -919093432
+Get Checksum: -919093432
+Get Checksum: -919093432
+Join finished
+block finished. duration 34.1016070843
+set_fits ('Ar40H2:parabolic', 'Ar40H1:parabolic', 'Ar40AX:parabolic', 'Ar40L1:parabolic') {}
+set "Ar40H2" to "parabolic"
+set "Ar40H1" to "parabolic"
+set "Ar40AX" to "parabolic"
+set "Ar40L1" to "parabolic"
+set_baseline_fits ('average_SEM',) {}
+set "H2" to "average_SEM"
+set "H1" to "average_SEM"
+set "AX" to "average_SEM"
+set "L1" to "average_SEM"
+sleep (0.5,) {}
+SLEEP 0.5
+peak_hop () {'ncycles': 6, 'hops': [{'counts': 10, 'settle': 5, 'positioning': {'detector': 'H2', 'isotope': 'Ar40'}, 'cup_configuration': [{'protect': False, 'is_baseline': False, 'isotope': 'Ar40', 'deflection': None, 'active': True, 'detector': 'H2'}]}, {'counts': 10, 'settle': 5, 'positioning': {'detector': 'H1', 'isotope': 'Ar40'}, 'cup_configuration': [{'protect': False, 'is_baseline': False, 'isotope': 'Ar40', 'deflection': None, 'active': True, 'detector': 'H1'}]}, {'counts': 10, 'settle': 5, 'positioning': {'detector': 'AX', 'isotope': 'Ar40'}, 'cup_configuration': [{'protect': False, 'is_baseline': False, 'isotope': 'Ar40', 'deflection': None, 'active': True, 'detector': 'AX'}]}, {'counts': 10, 'settle': 5, 'positioning': {'detector': 'L1', 'isotope': 'Ar40'}, 'cup_configuration': [{'protect': False, 'is_baseline': False, 'isotope': 'Ar40', 'deflection': None, 'active': True, 'detector': 'L1'}]}], 'mftable': 'ic_mftable'}
+Using MFTable /Users/obama/PychronDev/setupfiles/spectrometer/mftables/ic_mftable.csv
+Using mftable located at /Users/obama/PychronDev/setupfiles/spectrometer/mftables/ic_mftable.csv
+get initial guess parabolic
+get initial guess parabolic
+get initial guess parabolic
+get initial guess parabolic
+adding conditionals 
+make new hop generatior
+add group /signal/Ar40 (Group) '' table H2
+add group /signal/Ar40 (Group) '' table H1
+add group /signal/Ar40 (Group) '' table AX
+add group /signal/Ar40 (Group) '' table L1
+flush and close file /Users/obama/PychronDev/data/isotopes/39/f33bf2-79e6-4d7c-a848-35d959b4cf04.h5
+measuring signal. ncounts=384.0
+Equilibration Finished
+08:12:42 -- ******* Equilibration Finished *******
+checking ownership. requestor=129.138.12.137
+check software interlocks H
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel True
+Close H ===>> OK
+GetValveState H ===>> False
+change switch state (True, True)
+update switch state H False args=() kw={} ncanvase=4
+08:12:42 -- CLOSE  VALVE-H (Felix Inlet)
+Post Equilibration Started felix_pump_extraction_line.py
+08:12:42 -- ******* Post Equilibration Started felix_pump_extraction_line.py *******
+starting measurement
+testing...
+no interpolation path defined
+$$$$$$$$$$$$$$$$$ SETTING is_baseline False
+calculate duration
+testing...
+Peak hop Detectors=['H2']
+no interpolation path defined
+Peak hop Deflections=[None]
+executed 4.0
+Peak hop DeflectionsPairs=[('H2', None)]
+executed 4.0
+----------------------- HOP Ar40 H2
+Pump after analysis
+detector Detector(H2)
+POSITION Ar40 H2
+Mapping mass to dac mass func: "parabolic"
+doing GOSUB
+H2 map mass coeffs = [  1.08772369e-05   9.93017553e-02  -4.91907340e-01]
+testing...
+H2 map mass to dac 39.9624 >> 3.4938
+no interpolation path defined
+executed 4.0
+GetHighVoltage ===>> 9000
+Pump Bone
+positioning Ar40 (3.4938) on H2
+close () {'description': 'Felix Inlet'}
+setting magnet DAC
+closing name=--- desc=Felix Inlet
+current  : 3.493752
+requested: 3.493800
+Delta Dac: 0.000048
+Checking detector protection. dv=0.00005
+checking ownership. requestor=129.138.12.137
+check software interlocks H
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel False
+SetMagnetDAC 3.4938 ===>> OK
+Magnet settling time: 0.500
+Close H ===>> OK
+GetValveState H ===>> False
+change switch state (True, True)
+update switch state H False args=() kw={} ncanvase=4
+08:12:42 -- CLOSE  VALVE-H (Felix Inlet)
+---------------------------------------- close None (Felix Inlet) result=[(True, True)]
+action=close, ok=True, locked=[False]
+is_closed ('A',) {}
+is A () closed?
+is closed False
+close () {'description': 'CO2 Laser to Bone'}
+closing name=--- desc=CO2 Laser to Bone
+checking ownership. requestor=129.138.12.137
+check software interlocks F
+interlocks []
+actuate state mode=None-script, software_lock=True
+VALVE-F(CO2 Laser to Bone) software locked
+change switch state (True, False)
+---------------------------------------- close None (CO2 Laser to Bone) result=[(True, False)]
+action=close, ok=True, locked=[True]
+sleep (1,) {}
+SLEEP 1.0
+Get Checksum: 678225031
+update detector isotope pairing
+detectors=['H2']
+isotopes=['Ar40']
+updating pairing H2 - Ar40
+could not locate det=H2 iso=Ar40
+close () {'description': 'CO2 Laser to Roughing'}
+closing name=--- desc=CO2 Laser to Roughing
+checking ownership. requestor=129.138.12.137
+check software interlocks G
+interlocks []
+actuate state mode=None-script, software_lock=True
+VALVE-G(CO2 Laser to Roughing) software locked
+change switch state (True, False)
+---------------------------------------- close None (CO2 Laser to Roughing) result=[(True, False)]
+action=close, ok=True, locked=[True]
+open () {'description': 'Bone to Turbo'}
+opening name=--- desc=Bone to Turbo
+checking ownership. requestor=129.138.12.137
+check software interlocks C
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel True
+Open C ===>> OK
+set states for children of C. state=True
+handle state [('C', True)]
+update switch state C True args=() kw={'refresh': False} ncanvase=4
+refresh_canvas_needed fired
+GetValveState C ===>> OK
+change switch state (True, True)
+update switch state C True args=() kw={} ncanvase=4
+08:12:44 -- OPEN   VALVE-C (Bone to Turbo)
+---------------------------------------- open None (Bone to Turbo) result=[(True, True)], time=0.30 sec
+action=open, ok=True, locked=[False]
+open () {'description': 'Bone to Getter GP-50'}
+opening name=--- desc=Bone to Getter GP-50
+checking ownership. requestor=129.138.12.137
+check software interlocks N
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel False
+Open N ===>> OK
+GetValveState N ===>> OK
+change switch state (True, True)
+update switch state N True args=() kw={} ncanvase=4
+08:12:44 -- OPEN   VALVE-N (Bone to Getter GP-50)
+---------------------------------------- open None (Bone to Getter GP-50) result=[(True, True)], time=0.17 sec
+action=open, ok=True, locked=[False]
+open () {'description': 'Bone to Diode Laser'}
+opening name=--- desc=Bone to Diode Laser
+checking ownership. requestor=129.138.12.137
+check software interlocks B
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel True
+Open B ===>> OK
+GetValveState B ===>> OK
+change switch state (True, True)
+update switch state B True args=() kw={} ncanvase=4
+08:12:45 -- OPEN   VALVE-B (Bone to Diode Laser)
+---------------------------------------- open None (Bone to Diode Laser) result=[(True, True)], time=0.22 sec
+action=open, ok=True, locked=[False]
+open () {'description': 'Bone to CO2 Laser'}
+opening name=--- desc=Bone to CO2 Laser
+checking ownership. requestor=129.138.12.137
+check software interlocks D
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel True
+Open D ===>> OK
+GetValveState D ===>> OK
+change switch state (True, True)
+update switch state D True args=() kw={} ncanvase=4
+08:12:45 -- OPEN   VALVE-D (Bone to CO2 Laser)
+---------------------------------------- open None (Bone to CO2 Laser) result=[(True, True)], time=0.21 sec
+action=open, ok=True, locked=[False]
+sleep (1,) {}
+SLEEP 1.0
+set_resource () {'name': 'CO2PumpTimeFlag', 'value': 30}
+Set CO2PumpTimeFlag 30 ===>> OK
+release ('FelixCO2Flag',) {}
+release FelixCO2Flag
+Set FelixCO2Flag 0 ===>> OK
+executed 6.0
+PumpBone.py completed successfully
+gosub finished
+get_resource_value () {'name': 'FelixMiniboneFlag'}
+Read FelixMiniboneFlag ===>> 1
+Get Resource Value FelixMiniboneFlag=1.0
+doing GOSUB
+testing...
+no interpolation path defined
+executed 0
+get_resource_value () {'name': 'FelixMiniboneFlag'}
+Read FelixMiniboneFlag ===>> 1
+Get Resource Value FelixMiniboneFlag=1.0
+Pump minibone
+open () {'description': 'Bone to Minibone'}
+opening name=--- desc=Bone to Minibone
+checking ownership. requestor=129.138.12.137
+check software interlocks E
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel False
+Open E ===>> OK
+GetValveState E ===>> OK
+change switch state (True, True)
+update switch state E True args=() kw={} ncanvase=4
+08:12:47 -- OPEN   VALVE-E (Bone to Minibone)
+---------------------------------------- open None (Bone to Minibone) result=[(True, True)], time=0.19 sec
+action=open, ok=True, locked=[False]
+open () {'description': 'Minibone to Turbo'}
+opening name=--- desc=Minibone to Turbo
+checking ownership. requestor=129.138.12.137
+check software interlocks P
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel True
+Open P ===>> OK
+GetValveState P ===>> OK
+change switch state (True, True)
+update switch state P True args=() kw={} ncanvase=4
+08:12:47 -- OPEN   VALVE-P (Minibone to Turbo)
+---------------------------------------- open None (Minibone to Turbo) result=[(True, True)], time=0.18 sec
+action=open, ok=True, locked=[False]
+open () {'description': 'Quad Inlet'}
+opening name=--- desc=Quad Inlet
+checking ownership. requestor=129.138.12.137
+check software interlocks Q
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel True
+Open Q ===>> OK
+GetValveState Q ===>> OK
+change switch state (True, True)
+update switch state Q True args=() kw={} ncanvase=4
+08:12:48 -- OPEN   VALVE-Q (Quad Inlet)
+---------------------------------------- open None (Quad Inlet) result=[(True, True)], time=0.20 sec
+Join finished
+delaying 5 for detectors to settle after peak hop
+GetData ===>> L2(CDD),1.67027699559778,H2,498.942669115345,H1,0.0170091213189361,AX,0.441942876548469,L1,0.1293...
+GetData ===>> L2(CDD),1.67027699559778,H2,498.942669115345,H1,0.0170091213189361,AX,0.441942876548469,L1,0.1293...
+Get Checksum: 726040848
+action=open, ok=True, locked=[False]
+close () {'description': 'Minibone to Bone'}
+closing name=--- desc=Minibone to Bone
+checking ownership. requestor=129.138.12.137
+check software interlocks I
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel True
+Close I ===>> OK
+GetValveState I ===>> False
+change switch state (True, True)
+update switch state I False args=() kw={} ncanvase=4
+08:12:49 -- CLOSE  VALVE-I (Minibone to Bone)
+---------------------------------------- close None (Minibone to Bone) result=[(True, True)]
+action=close, ok=True, locked=[False]
+set_resource () {'name': 'MinibonePumpTimeFlag', 'value': 30}
+Set MinibonePumpTimeFlag 30 ===>> OK
+release ('FelixMiniboneFlag',) {}
+release FelixMiniboneFlag
+Set FelixMiniboneFlag 0 ===>> OK
+executed 0
+PumpMinibone.py completed successfully
+gosub finished
+executed 4.0
+felix_pump_extraction_line.py completed successfully
+Post Equilibration Finished
+08:12:49 -- ******* Post Equilibration Finished *******
+GetData ===>> L2(CDD),1.69072714061857,H2,498.928774671903,H1,-0.0674525873348065,AX,0.206221285618165,L1,0.028...
+GetData ===>> L2(CDD),1.69654758505257,H2,499.101954549014,H1,-0.160294476643229,AX,0.180530547436753,L1,0.0980...
+Get Checksum: 1509310064
+GetData ===>> L2(CDD),1.68459208646164,H2,497.681606830252,H1,-0.22509465821497,AX,0.246135042657668,L1,0.03019...
+GetData ===>> L2(CDD),1.66319812287755,H2,495.892613032488,H1,0.00161010889253751,AX,0.137523034002112,L1,0.108...
+GetData ===>> L2(CDD),1.65014156729863,H2,497.821839136279,H1,0.00827532290308365,AX,0.112063491606885,L1,-0.02...
+Get Checksum: 1509310064
+GetData ===>> L2(CDD),1.69937915558609,H2,498.499440761051,H1,-0.0279231300750828,AX,0.0979578188596912,L1,0.25...
+GetData ===>> L2(CDD),1.67247931403402,H2,498.492276721038,H1,-0.126399030505707,AX,0.204271518049304,L1,0.3887...
+GetData ===>> L2(CDD),1.65549003084934,H2,498.512306897079,H1,0.00413828809589535,AX,-0.0185494257133612,L1,-0....
+Get Checksum: 1509310064
+$$$$$$$$$$$$$$$$$ SETTING is_baseline False
+Peak hop Detectors=['H1']
+Peak hop Deflections=[None]
+Peak hop DeflectionsPairs=[('H1', None)]
+----------------------- HOP Ar40 H1
+detector Detector(H1)
+POSITION Ar40 H1
+Mapping mass to dac mass func: "parabolic"
+H1 map mass coeffs = [ 0.       0.       3.56501]
+H1 map mass to dac 39.9624 >> 3.56501
+GetHighVoltage ===>> 9000
+positioning Ar40 (3.56501) on H1
+setting magnet DAC
+current  : 3.493800
+requested: 3.565010
+Delta Dac: 0.071210
+Checking detector protection. dv=0.07121
+SetMagnetDAC 3.56501 ===>> OK
+Magnet settling time: 0.500
+update detector isotope pairing
+detectors=['H1']
+isotopes=['Ar40']
+updating pairing H1 - Ar40
+could not locate det=H1 iso=Ar40
+Get Checksum: 1509310064
+Join finished
+delaying 5 for detectors to settle after peak hop
+GetData ===>> L2(CDD),0.000157244698251559,H2,0.0451576215582197,H1,498.999516619313,AX,-0.0631532887592185,L1,...
+GetData ===>> L2(CDD),0.000157244698251559,H2,0.0451576215582197,H1,498.999516619313,AX,-0.0631532887592185,L1,...
+Get Checksum: 1509310064
+GetData ===>> L2(CDD),0,H2,0.143422992493099,H1,499.363432204227,AX,-0.264590228965827,L1,0.180907280718256
+GetData ===>> L2(CDD),0,H2,-0.208911096518307,H1,499.632206487812,AX,0.0666508447818382,L1,-0.0811574927887142
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+GetData ===>> L2(CDD),0,H2,0.0955130197503807,H1,499.138413872591,AX,0.166194496099447,L1,0.144553240513205
+Get Checksum: 1509310064
+GetData ===>> L2(CDD),0,H2,-0.0924905503783114,H1,498.924576576071,AX,-0.203143247092649,L1,0.124587951397186
+GetData ===>> L2(CDD),0,H2,0.0423601754435353,H1,498.773697818966,AX,-0.155794295378238,L1,-0.0125036095226221
+Get Checksum: 1509310064
+GetData ===>> L2(CDD),0,H2,0.0227782766521366,H1,498.904612634422,AX,0.001173249973093,L1,0.015305482990165
+GetData ===>> L2(CDD),0,H2,0.217099354065852,H1,499.11338225633,AX,0.000599910673264532,L1,-0.0831189607854546
+GetData ===>> L2(CDD),0,H2,0.0445748196247332,H1,498.533603467419,AX,-0.180214263579099,L1,0.0101128532071092
+Get Checksum: 1509310064
+$$$$$$$$$$$$$$$$$ SETTING is_baseline False
+Peak hop Detectors=['AX']
+Peak hop Deflections=[None]
+Peak hop DeflectionsPairs=[('AX', None)]
+----------------------- HOP Ar40 AX
+detector Detector(AX)
+POSITION Ar40 AX
+Mapping mass to dac mass func: "parabolic"
+AX map mass coeffs = [ 0.       0.       3.63928]
+AX map mass to dac 39.9624 >> 3.63928
+GetHighVoltage ===>> 9000
+positioning Ar40 (3.63928) on AX
+setting magnet DAC
+current  : 3.565010
+requested: 3.639280
+Delta Dac: 0.074270
+Checking detector protection. dv=0.07427
+SetMagnetDAC 3.63928 ===>> OK
+Magnet settling time: 0.500
+update detector isotope pairing
+detectors=['AX']
+isotopes=['Ar40']
+updating pairing AX - Ar40
+could not locate det=AX iso=Ar40
+Get Checksum: 1509310064
+Join finished
+delaying 5 for detectors to settle after peak hop
+GetData ===>> L2(CDD),0.000157244698251559,H2,0.0359493916056811,H1,-0.00815779395353318,AX,500.620116657343,L1...
+GetData ===>> L2(CDD),0.000157244698251559,H2,0.0359493916056811,H1,-0.00815779395353318,AX,500.620116657343,L1...
+Get Checksum: 1509310064
+GetData ===>> L2(CDD),0.000157244698251559,H2,0.146570445106234,H1,-0.308156608914972,AX,500.119660240742,L1,0....
+GetData ===>> L2(CDD),0,H2,0.0234776234299844,H1,-0.143634151967607,AX,500.069945522917,L1,0.00861276534309878
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+GetData ===>> L2(CDD),0,H2,0.153215100547268,H1,-0.18683550293845,AX,500.168365298593,L1,0.0835046052502702
+Get Checksum: 1509310064
+GetData ===>> L2(CDD),0,H2,-0.110205080893881,H1,-0.118355868428783,AX,500.249881998224,L1,0.0838508059410847
+GetData ===>> L2(CDD),0,H2,0.213718513470356,H1,-0.129960980854478,AX,499.865327333506,L1,-0.0404272888377772
+GetData ===>> L2(CDD),0,H2,0.16895262242345,H1,0.256299990167754,AX,499.400873967037,L1,0.0787732082114744
+Get Checksum: 1509310064
+GetData ===>> L2(CDD),0,H2,-0.0839827999665125,H1,0.0896406133516502,AX,500.030348630514,L1,0.053616412198773
+GetData ===>> L2(CDD),0,H2,-0.0948214279869452,H1,-0.0515950345261411,AX,499.92673806424,L1,0.168442884616355
+$$$$$$$$$$$$$$$$$ SETTING is_baseline False
+Peak hop Detectors=['L1']
+Peak hop Deflections=[None]
+Peak hop DeflectionsPairs=[('L1', None)]
+----------------------- HOP Ar40 L1
+detector Detector(L1)
+POSITION Ar40 L1
+Mapping mass to dac mass func: "parabolic"
+L1 map mass coeffs = [ 0.       0.       3.71626]
+L1 map mass to dac 39.9624 >> 3.71626
+GetHighVoltage ===>> 9000
+positioning Ar40 (3.71626) on L1
+setting magnet DAC
+current  : 3.639280
+requested: 3.716260
+Delta Dac: 0.076980
+Checking detector protection. dv=0.07698
+SetMagnetDAC 3.71626 ===>> OK
+Magnet settling time: 0.500
+Get Checksum: 1509310064
+update detector isotope pairing
+detectors=['L1']
+isotopes=['Ar40']
+updating pairing L1 - Ar40
+could not locate det=L1 iso=Ar40
+Get Checksum: 1509310064
+Join finished
+delaying 5 for detectors to settle after peak hop
+GetData ===>> L2(CDD),0,H2,0.0224286034503118,H1,0.0869972827828903,AX,-0.255190012072127,L1,500.067465978331
+GetData ===>> L2(CDD),0,H2,0.0224286034503118,H1,0.0869972827828903,AX,-0.255190012072127,L1,500.067465978331
+set states for children of U. state=False
+handle state [('U', False)]
+update switch state U False args=() kw={'refresh': False} ncanvase=4
+refresh_canvas_needed fired
+Get Checksum: 1041668763
+GetData ===>> L2(CDD),0,H2,0.247061107192874,H1,-0.067567496186339,AX,-0.298407323025496,L1,500.094042523513
+GetData ===>> L2(CDD),0,H2,-0.0134705133645755,H1,0.158254814837372,AX,-0.0923912032404116,L1,499.772984381912
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+GetData ===>> L2(CDD),0.000157244698251559,H2,-0.128501989391038,H1,-0.36892631243284,AX,-0.178035981729497,L1,...
+Get Checksum: 1041668763
+GetData ===>> L2(CDD),0,H2,-0.0217457722575337,H1,0.0561972691951478,AX,0.142569149399248,L1,499.151728187762
+GetData ===>> L2(CDD),0,H2,-0.0690649219708733,H1,-0.182584392004031,AX,0.25106702982969,L1,499.314559564847
+GetData ===>> L2(CDD),0,H2,-0.042958087978766,H1,0.0160897703931992,AX,-0.123233373807646,L1,499.512105280194
+Get Checksum: 1041668763
+GetData ===>> L2(CDD),0,H2,-0.0428415380502743,H1,-0.149264224912365,AX,-0.262526774587513,L1,499.867652161076
+GetData ===>> L2(CDD),0,H2,0.0641571547777741,H1,0.0481526514996279,AX,-0.1068378448587,L1,499.761659588126
+$$$$$$$$$$$$$$$$$ SETTING is_baseline False
+Peak hop Detectors=['H2']
+Peak hop Deflections=[None]
+Peak hop DeflectionsPairs=[('H2', None)]
+----------------------- HOP Ar40 H2
+detector Detector(H2)
+POSITION Ar40 H2
+Mapping mass to dac mass func: "parabolic"
+H2 map mass coeffs = [  1.08772369e-05   9.93017553e-02  -4.91907340e-01]
+H2 map mass to dac 39.9624 >> 3.4938
+GetHighVoltage ===>> 9000
+positioning Ar40 (3.4938) on H2
+setting magnet DAC
+current  : 3.716260
+requested: 3.493800
+Delta Dac: 0.222460
+Checking detector protection. dv=0.22246
+Move 0.22246>0.15. Do AF Demag
+Doing AF Demagnetization around target=3.4938. duration=4, start_amplitude=0.2, period=0.5
+set af dac raw:-0.1875 dac:3.3063
+SetMagnetDAC 3.3063 ===>> OK
+Get Checksum: 1041668763
+set af dac raw:0.1625 dac:3.6563
+SetMagnetDAC 3.6563 ===>> OK
+set af dac raw:-0.1375 dac:3.3563
+SetMagnetDAC 3.3563 ===>> OK
+set af dac raw:0.1125 dac:3.6063
+SetMagnetDAC 3.6063 ===>> OK
+set af dac raw:-0.0875 dac:3.4063
+SetMagnetDAC 3.4063 ===>> OK
+set af dac raw:0.0625 dac:3.5563
+SetMagnetDAC 3.5563 ===>> OK
+set af dac raw:-0.0375 dac:3.4563
+Get Checksum: 1041668763
+SetMagnetDAC 3.4563 ===>> OK
+set af dac raw:0.0125 dac:3.5063
+SetMagnetDAC 3.5063 ===>> OK
+SetMagnetDAC 3.4938 ===>> OK
+Magnet settling time: 0.500
+update detector isotope pairing
+detectors=['H2']
+isotopes=['Ar40']
+updating pairing H2 - Ar40
+could not locate det=H2 iso=Ar40
+Get Checksum: 1041668763
+Get Checksum: 1041668763
+Join finished
+delaying 5 for detectors to settle after peak hop
+GetData ===>> L2(CDD),1.62701740767694,H2,494.133872133415,H1,0.036200771946196,AX,0.33262052792722,L1,-0.06650...
+GetData ===>> L2(CDD),1.62701740767694,H2,494.133872133415,H1,0.036200771946196,AX,0.33262052792722,L1,-0.06650...
+GetData ===>> L2(CDD),1.63614121026785,H2,494.338900513129,H1,-0.0111456033043471,AX,0.143142573277806,L1,0.149...
+GetData ===>> L2(CDD),1.65155733638683,H2,494.245289995224,H1,-0.300804249021453,AX,0.2118412260032,L1,-0.02092...
+Get Checksum: 1041668763
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+GetData ===>> L2(CDD),1.62843316882451,H2,494.307793572586,H1,0.109638218414445,AX,0.200371994760473,L1,0.04323...
+GetData ===>> L2(CDD),1.63142199951034,H2,494.458224130561,H1,0.162737319432165,AX,0.208400442280571,L1,0.07254...
+GetData ===>> L2(CDD),1.61034292407636,H2,494.299907431453,H1,-0.0252801144003375,AX,-0.058108225419684,L1,0.22...
+Get Checksum: 1041668763
+GetData ===>> L2(CDD),1.61553402966607,H2,494.491964004799,H1,0.118487865617441,AX,0.168832313515187,L1,0.16290...
+GetData ===>> L2(CDD),1.63960196825648,H2,494.11109332005,H1,-0.0121798428466689,AX,0.487258507529901,L1,-0.021...
+08:14:01 -- collecting point 50
+GetData ===>> L2(CDD),1.6584788811497,H2,494.294650032229,H1,0.0918242397191856,AX,0.175369544356554,L1,0.04473...
+Get Checksum: 1041668763
+$$$$$$$$$$$$$$$$$ SETTING is_baseline False
+Peak hop Detectors=['H1']
+Peak hop Deflections=[None]
+Peak hop DeflectionsPairs=[('H1', None)]
+----------------------- HOP Ar40 H1
+detector Detector(H1)
+POSITION Ar40 H1
+Mapping mass to dac mass func: "parabolic"
+H1 map mass coeffs = [ 0.       0.       3.56501]
+H1 map mass to dac 39.9624 >> 3.56501
+GetHighVoltage ===>> 9000
+positioning Ar40 (3.56501) on H1
+setting magnet DAC
+current  : 3.493800
+requested: 3.565010
+Delta Dac: 0.071210
+Checking detector protection. dv=0.07121
+SetMagnetDAC 3.56501 ===>> OK
+Magnet settling time: 0.500
+update detector isotope pairing
+detectors=['H1']
+isotopes=['Ar40']
+updating pairing H1 - Ar40
+could not locate det=H1 iso=Ar40
+Get Checksum: 1041668763
+Get Checksum: 1041668763
+Join finished
+delaying 5 for detectors to settle after peak hop
+GetData ===>> L2(CDD),0,H2,-0.0836331648048253,H1,495.208154305207,AX,-0.339330149254298,L1,0.11212428018275
+GetData ===>> L2(CDD),0,H2,-0.0836331648048253,H1,495.208154305207,AX,-0.339330149254298,L1,0.11212428018275
+GetData ===>> L2(CDD),0,H2,-0.143885112562354,H1,495.513691405043,AX,-0.136303735247314,L1,0.102315022129946
+GetData ===>> L2(CDD),0,H2,-0.137708584601723,H1,495.189665642066,AX,-0.207270406105816,L1,0.13705178303227
+Get Checksum: 1041668763
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+GetData ===>> L2(CDD),0,H2,-0.0893438567951709,H1,495.042777456018,AX,-0.0294425907614817,L1,0.0298449945241159
+GetData ===>> L2(CDD),0,H2,-0.191081821431938,H1,494.906304386193,AX,-0.129539272103452,L1,-0.00627259598069826
+GetData ===>> L2(CDD),0,H2,0.163007306624145,H1,494.595289856366,AX,0.0491056232789715,L1,0.210453156785521
+Get Checksum: 1041668763
+GetData ===>> L2(CDD),0,H2,-0.22569129381248,H1,494.66920994211,AX,-0.30574375604189,L1,0.185639176807514
+GetData ===>> L2(CDD),0,H2,0.0958627190792084,H1,494.552412497813,AX,-0.0802375113730249,L1,0.145707316052313
+GetData ===>> L2(CDD),0,H2,0.0448079403564394,H1,494.961758256468,AX,-0.144100006669688,L1,0.16082583264319
+Get Checksum: 1041668763
+$$$$$$$$$$$$$$$$$ SETTING is_baseline False
+Peak hop Detectors=['AX']
+Peak hop Deflections=[None]
+Peak hop DeflectionsPairs=[('AX', None)]
+----------------------- HOP Ar40 AX
+detector Detector(AX)
+POSITION Ar40 AX
+Mapping mass to dac mass func: "parabolic"
+AX map mass coeffs = [ 0.       0.       3.63928]
+AX map mass to dac 39.9624 >> 3.63928
+GetHighVoltage ===>> 9000
+positioning Ar40 (3.63928) on AX
+setting magnet DAC
+current  : 3.565010
+requested: 3.639280
+Delta Dac: 0.074270
+Checking detector protection. dv=0.07427
+SetMagnetDAC 3.63928 ===>> OK
+Magnet settling time: 0.500
+update detector isotope pairing
+detectors=['AX']
+isotopes=['Ar40']
+updating pairing AX - Ar40
+could not locate det=AX iso=Ar40
+Get Checksum: 1041668763
+Get Checksum: 1041668763
+Join finished
+delaying 5 for detectors to settle after peak hop
+GetData ===>> L2(CDD),0,H2,0.103556135942505,H1,0.308602488489406,AX,495.428057999054,L1,-0.0930416203449429
+GetData ===>> L2(CDD),0,H2,0.103556135942505,H1,0.308602488489406,AX,495.428057999054,L1,-0.0930416203449429
+GetData ===>> L2(CDD),0,H2,-0.0329347433748319,H1,0.0489571102502948,AX,495.862556660439,L1,0.214954365469196
+GetData ===>> L2(CDD),0,H2,-0.142370118748045,H1,-0.138923249352788,AX,495.839046767147,L1,0.243231667805432
+Get Checksum: 1041668763
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+GetData ===>> L2(CDD),0,H2,-0.175466372339921,H1,0.00758581586944858,AX,495.389706167832,L1,0.190024857243327
+GetData ===>> L2(CDD),0,H2,-0.0255919955160294,H1,0.127797322373818,AX,495.427481270786,L1,-0.0816190150277696
+GetData ===>> L2(CDD),0,H2,0.0189318783107306,H1,0.0504511068524492,AX,495.909577817042,L1,0.0382687796608673
+GetData ===>> L2(CDD),0,H2,0.0547156228158774,H1,0.0737807385875052,AX,495.66295343756,L1,-0.0915416899587259
+GetData ===>> L2(CDD),0,H2,-0.144933953058913,H1,-0.137774245224763,AX,494.852997459037,L1,0.231458976308175
+Get Checksum: 1041668763
+GetData ===>> L2(CDD),0,H2,0.0889853218938207,H1,-0.034932832226649,AX,495.153998861199,L1,-0.0299271567893124
+$$$$$$$$$$$$$$$$$ SETTING is_baseline False
+Peak hop Detectors=['L1']
+Peak hop Deflections=[None]
+Peak hop DeflectionsPairs=[('L1', None)]
+----------------------- HOP Ar40 L1
+detector Detector(L1)
+POSITION Ar40 L1
+Mapping mass to dac mass func: "parabolic"
+L1 map mass coeffs = [ 0.       0.       3.71626]
+L1 map mass to dac 39.9624 >> 3.71626
+GetHighVoltage ===>> 9000
+positioning Ar40 (3.71626) on L1
+setting magnet DAC
+current  : 3.639280
+requested: 3.716260
+Delta Dac: 0.076980
+Checking detector protection. dv=0.07698
+SetMagnetDAC 3.71626 ===>> OK
+Magnet settling time: 0.500
+update detector isotope pairing
+detectors=['L1']
+isotopes=['Ar40']
+updating pairing L1 - Ar40
+could not locate det=L1 iso=Ar40
+Get Checksum: 1041668763
+set states for children of S. state=False
+handle state [('S', False)]
+update switch state S False args=() kw={'refresh': False} ncanvase=4
+refresh_canvas_needed fired
+Get Checksum: 802680408
+State checksums do not match. Local:1210623535 Remote:802680408
+State checksum failed
+set states for children of O. state=False
+handle state [('O', False)]
+update switch state O False args=() kw={'refresh': False} ncanvase=4
+refresh_canvas_needed fired
+Join finished
+delaying 5 for detectors to settle after peak hop
+GetData ===>> L2(CDD),0,H2,-0.00321375729092204,H1,0.158254814837372,AX,-0.22996946428355,L1,495.282402424668
+GetData ===>> L2(CDD),0,H2,-0.00321375729092204,H1,0.158254814837372,AX,-0.22996946428355,L1,495.282402424668
+GetData ===>> L2(CDD),0,H2,-0.179545058471933,H1,0.0798718190682003,AX,-0.194315653118304,L1,495.863057673755
+set states for children of R. state=True
+handle state [('R', True)]
+update switch state R True args=() kw={'refresh': False} ncanvase=4
+refresh_canvas_needed fired
+Get Checksum: -450580244
+GetData ===>> L2(CDD),0,H2,0.00436232478027667,H1,-0.074347094199923,AX,-0.239943123558588,L1,495.217499875612
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+GetData ===>> L2(CDD),0,H2,0.0774453911882222,H1,-0.23118381320642,AX,-0.0249706747654594,L1,494.96067622386
+GetData ===>> L2(CDD),0.000157244698251559,H2,-0.0873626000860051,H1,0.201241742405846,AX,-0.0265759803341489,L...
+Get Checksum: -450580244
+GetData ===>> L2(CDD),0.000157244698251559,H2,-0.149945064351616,H1,-0.162017942081934,AX,-0.314684958155802,L1...
+GetData ===>> L2(CDD),0,H2,-0.0487855666924944,H1,-0.109163601071164,AX,-0.309641213331801,L1,495.097120614212
+set states for children of R. state=False
+handle state [('R', False)]
+update switch state R False args=() kw={'refresh': False} ncanvase=4
+refresh_canvas_needed fired
+GetData ===>> L2(CDD),0,H2,-0.037596776897718,H1,-0.235090043338014,AX,-0.0335704947756229,L1,495.233870057935
+Get Checksum: 802680408
+GetData ===>> L2(CDD),0,H2,0.0598443449210327,H1,-0.0250502866077566,AX,-0.121169616300321,L1,495.510313144419
+set states for children of R. state=True
+handle state [('R', True)]
+update switch state R True args=() kw={'refresh': False} ncanvase=4
+refresh_canvas_needed fired
+$$$$$$$$$$$$$$$$$ SETTING is_baseline False
+Peak hop Detectors=['H2']
+Peak hop Deflections=[None]
+Peak hop DeflectionsPairs=[('H2', None)]
+----------------------- HOP Ar40 H2
+detector Detector(H2)
+POSITION Ar40 H2
+Mapping mass to dac mass func: "parabolic"
+H2 map mass coeffs = [  1.08772369e-05   9.93017553e-02  -4.91907340e-01]
+H2 map mass to dac 39.9624 >> 3.4938
+GetHighVoltage ===>> 9000
+positioning Ar40 (3.4938) on H2
+setting magnet DAC
+current  : 3.716260
+requested: 3.493800
+Delta Dac: 0.222460
+Checking detector protection. dv=0.22246
+Move 0.22246>0.15. Do AF Demag
+Doing AF Demagnetization around target=3.4938. duration=4, start_amplitude=0.2, period=0.5
+set af dac raw:-0.1875 dac:3.3063
+SetMagnetDAC 3.3063 ===>> OK
+set af dac raw:0.1625 dac:3.6563
+SetMagnetDAC 3.6563 ===>> OK
+set states for children of S. state=True
+handle state [('S', True)]
+update switch state S True args=() kw={'refresh': False} ncanvase=4
+refresh_canvas_needed fired
+set af dac raw:-0.1375 dac:3.3563
+SetMagnetDAC 3.3563 ===>> OK
+set af dac raw:0.1125 dac:3.6063
+SetMagnetDAC 3.6063 ===>> OK
+Get Checksum: 1434984433
+set af dac raw:-0.0875 dac:3.4063
+SetMagnetDAC 3.4063 ===>> OK
+set af dac raw:0.0625 dac:3.5563
+SetMagnetDAC 3.5563 ===>> OK
+set af dac raw:-0.0375 dac:3.4563
+SetMagnetDAC 3.4563 ===>> OK
+set af dac raw:0.0125 dac:3.5063
+SetMagnetDAC 3.5063 ===>> OK
+SetMagnetDAC 3.4938 ===>> OK
+Magnet settling time: 0.500
+Get Checksum: 1434984433
+update detector isotope pairing
+detectors=['H2']
+isotopes=['Ar40']
+updating pairing H2 - Ar40
+could not locate det=H2 iso=Ar40
+Get Checksum: 1434984433
+Join finished
+delaying 5 for detectors to settle after peak hop
+GetData ===>> L2(CDD),1.59838767545698,H2,489.932773203346,H1,-0.180286486400102,AX,0.0596556527707812,L1,0.123...
+GetData ===>> L2(CDD),1.63566928894902,H2,490.35345590467,H1,-0.115253487989235,AX,0.275039141356774,L1,0.15436...
+Get Checksum: 1434984433
+GetData ===>> L2(CDD),1.58611785107923,H2,490.454493773664,H1,0.0756195512833277,AX,0.0508257288927399,L1,0.262...
+GetData ===>> L2(CDD),1.59917420390607,H2,490.03858620933,H1,0.203770444856487,AX,0.100710129016176,L1,0.056501...
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+GetData ===>> L2(CDD),1.612387904286,H2,489.862382017874,H1,0.174231016129539,AX,0.296947191236819,L1,0.1625569...
+set states for children of R. state=False
+handle state [('R', False)]
+update switch state R False args=() kw={'refresh': False} ncanvase=4
+refresh_canvas_needed fired
+GetData ===>> L2(CDD),1.61207329188003,H2,489.906831466917,H1,0.00884991247390921,AX,0.317249860629369,L1,0.206...
+Get Checksum: 471081216
+GetData ===>> L2(CDD),1.63551198185474,H2,489.673526307439,H1,0.124579228396556,AX,0.254737362264794,L1,0.17086...
+GetData ===>> L2(CDD),1.59760114715793,H2,490.157818994227,H1,-0.100315961001617,AX,-0.0651025106934665,L1,0.06...
+set states for children of U. state=True
+handle state [('U', True)]
+update switch state U True args=() kw={'refresh': False} ncanvase=4
+refresh_canvas_needed fired
+GetData ===>> L2(CDD),1.6116013733161,H2,490.085957256784,H1,0.218138198239032,AX,0.275612644160191,L1,0.130935...
+Get Checksum: 1499143366
+GetData ===>> L2(CDD),1.61616325503018,H2,489.903479484936,H1,0.155036619255182,AX,0.256801930410481,L1,0.25789...
+$$$$$$$$$$$$$$$$$ SETTING is_baseline False
+Peak hop Detectors=['H1']
+Peak hop Deflections=[None]
+Peak hop DeflectionsPairs=[('H1', None)]
+----------------------- HOP Ar40 H1
+detector Detector(H1)
+POSITION Ar40 H1
+Mapping mass to dac mass func: "parabolic"
+H1 map mass coeffs = [ 0.       0.       3.56501]
+H1 map mass to dac 39.9624 >> 3.56501
+GetHighVoltage ===>> 9000
+positioning Ar40 (3.56501) on H1
+setting magnet DAC
+current  : 3.493800
+requested: 3.565010
+Delta Dac: 0.071210
+Checking detector protection. dv=0.07121
+SetMagnetDAC 3.56501 ===>> OK
+Magnet settling time: 0.500
+update detector isotope pairing
+detectors=['H1']
+isotopes=['Ar40']
+updating pairing H1 - Ar40
+could not locate det=H1 iso=Ar40
+Get Checksum: 1499143366
+Get Checksum: 1499143366
+Join finished
+delaying 5 for detectors to settle after peak hop
+GetData ===>> L2(CDD),0,H2,-0.0165008979856188,H1,491.231557356361,AX,-0.131144403253852,L1,-0.0448119256622556
+GetData ===>> L2(CDD),0,H2,-0.0165008979856188,H1,491.231557356361,AX,-0.131144403253852,L1,-0.0448119256622556
+GetData ===>> L2(CDD),0,H2,-0.15530575963561,H1,490.883390691364,AX,0.299241256713879,L1,0.0799272053574097
+Get Checksum: 1499143366
+GetData ===>> L2(CDD),0,H2,0.00890800218992362,H1,490.586162510842,AX,-0.116239511006901,L1,-0.137807703861531
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+GetData ===>> L2(CDD),0,H2,0.138876689930573,H1,490.7089015216,AX,-0.11773001061953,L1,0.182869283607877
+GetData ===>> L2(CDD),0,H2,0.0586787238995381,H1,490.641977650135,AX,-0.187436952327679,L1,0.0711568615381965
+Get Checksum: 1499143366
+GetData ===>> L2(CDD),0,H2,0.11066677200188,H1,490.793734172403,AX,-0.0500819337814519,L1,0.138321256367149
+GetData ===>> L2(CDD),0.000157244698251559,H2,-0.061838993020414,H1,490.827174412324,AX,-0.464609662671476,L1,-...
+GetData ===>> L2(CDD),0.000157244698251559,H2,0.0147358246438484,H1,489.923068026918,AX,-0.116927434191609,L1,-...
+Get Checksum: 1499143366
+08:15:21 -- collecting point 100
+GetData ===>> L2(CDD),0,H2,-0.213805350469165,H1,490.215857503661,AX,-0.191334888812494,L1,-0.024273192369289
+$$$$$$$$$$$$$$$$$ SETTING is_baseline False
+Peak hop Detectors=['AX']
+Peak hop Deflections=[None]
+Peak hop DeflectionsPairs=[('AX', None)]
+----------------------- HOP Ar40 AX
+detector Detector(AX)
+POSITION Ar40 AX
+Mapping mass to dac mass func: "parabolic"
+AX map mass coeffs = [ 0.       0.       3.63928]
+AX map mass to dac 39.9624 >> 3.63928
+GetHighVoltage ===>> 9000
+positioning Ar40 (3.63928) on AX
+setting magnet DAC
+current  : 3.565010
+requested: 3.639280
+Delta Dac: 0.074270
+Checking detector protection. dv=0.07427
+SetMagnetDAC 3.63928 ===>> OK
+Magnet settling time: 0.500
+update detector isotope pairing
+detectors=['AX']
+isotopes=['Ar40']
+updating pairing AX - Ar40
+could not locate det=AX iso=Ar40
+Get Checksum: 1499143366
+Get Checksum: 1499143366
+Join finished
+delaying 5 for detectors to settle after peak hop
+GetData ===>> L2(CDD),0,H2,-0.196675354487628,H1,-0.255884708049646,AX,491.721378532384,L1,-0.23979280415898
+GetData ===>> L2(CDD),0,H2,-0.196675354487628,H1,-0.255884708049646,AX,491.721378532384,L1,-0.23979280415898
+GetData ===>> L2(CDD),0,H2,0.105654351043351,H1,-0.00103298046213183,AX,491.492505262907,L1,0.0401150985230802
+Get Checksum: 1499143366
+GetData ===>> L2(CDD),0,H2,-0.0289719974091257,H1,0.0859629380105282,AX,491.982692529566,L1,0.109931613877125
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+GetData ===>> L2(CDD),0,H2,-0.231983793573535,H1,0.123889638226767,AX,491.354194701969,L1,0.0187672516490639
+GetData ===>> L2(CDD),0,H2,-0.0337506008454711,H1,-0.0419424834387464,AX,491.199495614405,L1,0.0996607693852996
+Get Checksum: 1499143366
+GetData ===>> L2(CDD),0,H2,0.0375812235054419,H1,-0.135246431324865,AX,491.233455763495,L1,0.0751958257982445
+GetData ===>> L2(CDD),0,H2,0.0836233169568528,H1,0.140899672970829,AX,491.24194594994,L1,0.314678816334395
+GetData ===>> L2(CDD),0,H2,-0.0368974732859552,H1,0.0136764783823894,AX,491.275043856642,L1,0.0475004091767553
+Get Checksum: 1499143366
+GetData ===>> L2(CDD),0,H2,-0.0399277853267172,H1,0.106305255448825,AX,490.804172484576,L1,-0.017349925667391
+$$$$$$$$$$$$$$$$$ SETTING is_baseline False
+Peak hop Detectors=['L1']
+Peak hop Deflections=[None]
+Peak hop DeflectionsPairs=[('L1', None)]
+----------------------- HOP Ar40 L1
+detector Detector(L1)
+POSITION Ar40 L1
+Mapping mass to dac mass func: "parabolic"
+L1 map mass coeffs = [ 0.       0.       3.71626]
+L1 map mass to dac 39.9624 >> 3.71626
+GetHighVoltage ===>> 9000
+positioning Ar40 (3.71626) on L1
+setting magnet DAC
+current  : 3.639280
+requested: 3.716260
+Delta Dac: 0.076980
+Checking detector protection. dv=0.07698
+SetMagnetDAC 3.71626 ===>> OK
+Magnet settling time: 0.500
+update detector isotope pairing
+detectors=['L1']
+isotopes=['Ar40']
+updating pairing L1 - Ar40
+could not locate det=L1 iso=Ar40
+Get Checksum: 1499143366
+Get Checksum: 1499143366
+Join finished
+delaying 5 for detectors to settle after peak hop
+GetData ===>> L2(CDD),0.000157244698251559,H2,0.115562649827381,H1,0.0942377272450811,AX,-0.255304649416794,L1,...
+GetData ===>> L2(CDD),0.000157244698251559,H2,0.115562649827381,H1,0.0942377272450811,AX,-0.255304649416794,L1,...
+GetData ===>> L2(CDD),0,H2,-0.0426084381521266,H1,0.11481008029749,AX,0.0192909477669929,L1,491.112526015716
+Get Checksum: 1499143366
+GetData ===>> L2(CDD),0.000157244698251559,H2,-0.109156203154806,H1,-0.0473433274974707,AX,0.0290379516048683,L...
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+GetData ===>> L2(CDD),0,H2,-0.100998226786656,H1,-0.0760707132162916,AX,-0.0436608522740469,L1,490.80231650308
+GetData ===>> L2(CDD),0,H2,-0.107058444301685,H1,0.0825151301119956,AX,-0.228479138502964,L1,490.664017585585
+Get Checksum: 1499143366
+GetData ===>> L2(CDD),0,H2,-0.301664695481348,H1,0.0486123421321193,AX,0.0634399306607814,L1,491.032854499562
+GetData ===>> L2(CDD),0,H2,-0.0405105365657208,H1,-0.0220625203259676,AX,-0.116239511006901,L1,490.854110321018
+GetData ===>> L2(CDD),0,H2,-0.0661512473656436,H1,0.141129540359002,AX,-0.208416836023658,L1,490.954232011216
+Get Checksum: 1499143366
+GetData ===>> L2(CDD),0,H2,-0.0570605268102366,H1,-0.0318301834591102,AX,-0.0746192434451282,L1,490.741121628169
+$$$$$$$$$$$$$$$$$ SETTING is_baseline False
+Peak hop Detectors=['H2']
+Peak hop Deflections=[None]
+Peak hop DeflectionsPairs=[('H2', None)]
+----------------------- HOP Ar40 H2
+detector Detector(H2)
+POSITION Ar40 H2
+Mapping mass to dac mass func: "parabolic"
+H2 map mass coeffs = [  1.08772369e-05   9.93017553e-02  -4.91907340e-01]
+H2 map mass to dac 39.9624 >> 3.4938
+GetHighVoltage ===>> 9000
+positioning Ar40 (3.4938) on H2
+setting magnet DAC
+current  : 3.716260
+requested: 3.493800
+Delta Dac: 0.222460
+Checking detector protection. dv=0.22246
+Move 0.22246>0.15. Do AF Demag
+Doing AF Demagnetization around target=3.4938. duration=4, start_amplitude=0.2, period=0.5
+set af dac raw:-0.1875 dac:3.3063
+SetMagnetDAC 3.3063 ===>> OK
+set af dac raw:0.1625 dac:3.6563
+SetMagnetDAC 3.6563 ===>> OK
+set af dac raw:-0.1375 dac:3.3563
+SetMagnetDAC 3.3563 ===>> OK
+Get Checksum: 1499143366
+set af dac raw:0.1125 dac:3.6063
+SetMagnetDAC 3.6063 ===>> OK
+set af dac raw:-0.0875 dac:3.4063
+SetMagnetDAC 3.4063 ===>> OK
+set af dac raw:0.0625 dac:3.5563
+SetMagnetDAC 3.5563 ===>> OK
+set af dac raw:-0.0375 dac:3.4563
+SetMagnetDAC 3.4563 ===>> OK
+set af dac raw:0.0125 dac:3.5063
+SetMagnetDAC 3.5063 ===>> OK
+Get Checksum: 1499143366
+SetMagnetDAC 3.4938 ===>> OK
+Magnet settling time: 0.500
+update detector isotope pairing
+detectors=['H2']
+isotopes=['Ar40']
+updating pairing H2 - Ar40
+could not locate det=H2 iso=Ar40
+Get Checksum: 1499143366
+Join finished
+delaying 5 for detectors to settle after peak hop
+GetData ===>> L2(CDD),1.57667954948256,H2,485.851667359788,H1,0.122280596414114,AX,0.180989304605525,L1,0.17052...
+GetData ===>> L2(CDD),1.57667954948256,H2,485.851667359788,H1,0.122280596414114,AX,0.180989304605525,L1,0.17052...
+Get Checksum: 1499143366
+GetData ===>> L2(CDD),1.6251297269031,H2,486.061610434996,H1,-0.0410231878209953,AX,0.296947191236819,L1,0.0488...
+GetData ===>> L2(CDD),1.60357876599388,H2,485.822863017888,H1,0.0452795900098507,AX,0.217919973973784,L1,0.1290...
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+GetData ===>> L2(CDD),1.57243232081324,H2,486.384815817339,H1,0.125153887247938,AX,0.0700911217985068,L1,0.2314...
+Get Checksum: 1499143366
+GetData ===>> L2(CDD),1.60027534398689,H2,485.597397960426,H1,0.141244474073655,AX,0.490700288182866,L1,0.07588...
+GetData ===>> L2(CDD),1.61364635414994,H2,485.563654514467,H1,0.023559522025097,AX,0.227324904970328,L1,-0.1087...
+GetData ===>> L2(CDD),1.584387494169,H2,485.682487945544,H1,0.00804548717043191,AX,0.251296425196479,L1,0.03538...
+Get Checksum: 1499143366
+GetData ===>> L2(CDD),1.60389337775164,H2,486.108899891973,H1,0.00195486021213512,AX,0.0626372038045151,L1,0.18...
+GetData ===>> L2(CDD),1.57447728221896,H2,485.285518262972,H1,-0.0435512486609104,AX,0.0676829265953438,L1,0.23...
+$$$$$$$$$$$$$$$$$ SETTING is_baseline False
+Peak hop Detectors=['H1']
+Peak hop Deflections=[None]
+Peak hop DeflectionsPairs=[('H1', None)]
+----------------------- HOP Ar40 H1
+detector Detector(H1)
+POSITION Ar40 H1
+Mapping mass to dac mass func: "parabolic"
+H1 map mass coeffs = [ 0.       0.       3.56501]
+H1 map mass to dac 39.9624 >> 3.56501
+GetHighVoltage ===>> 9000
+positioning Ar40 (3.56501) on H1
+setting magnet DAC
+current  : 3.493800
+requested: 3.565010
+Delta Dac: 0.071210
+Checking detector protection. dv=0.07121
+SetMagnetDAC 3.56501 ===>> OK
+Magnet settling time: 0.500
+update detector isotope pairing
+detectors=['H1']
+isotopes=['Ar40']
+updating pairing H1 - Ar40
+could not locate det=H1 iso=Ar40
+Get Checksum: 1499143366
+Get Checksum: 1499143366
+Join finished
+delaying 5 for detectors to settle after peak hop
+GetData ===>> L2(CDD),0,H2,-0.0842158900052571,H1,486.5821708888,AX,-0.223434941812168,L1,0.0135746033020322
+GetData ===>> L2(CDD),0,H2,-0.0459883812429702,H1,486.549923403199,AX,-0.160265603505824,L1,-0.0288886760035054
+GetData ===>> L2(CDD),0.000157244698251559,H2,-0.0727944128006559,H1,486.15654460576,AX,-0.0718674267791576,L1,...
+GetData ===>> L2(CDD),0,H2,-0.061838993020414,H1,486.147046372758,AX,-0.0509992276419886,L1,0.0118437267077525
+Get Checksum: 1499143366
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+GetData ===>> L2(CDD),0,H2,-0.10379525492093,H1,485.638280532529,AX,0.0911917565155736,L1,0.10693113118911
+GetData ===>> L2(CDD),0,H2,-0.00484552113323464,H1,486.174821718832,AX,-0.243496931194777,L1,-0.160651454056496
+GetData ===>> L2(CDD),0,H2,-0.139922816091381,H1,486.003430681307,AX,-0.0122428001200298,L1,0.0286910570613339
+Get Checksum: 1499143366
+GetData ===>> L2(CDD),0,H2,0.10810227434923,H1,486.256712337897,AX,-0.343342097366135,L1,0.0314605092820068
+GetData ===>> L2(CDD),0,H2,0.00424576922726985,H1,485.2848892788,AX,-0.115322279328252,L1,0.0892746329262772
+GetData ===>> L2(CDD),0,H2,-0.00496207558934865,H1,485.823575398042,AX,-0.245445787874976,L1,0.0127668605062831
+Get Checksum: 1499143366
+$$$$$$$$$$$$$$$$$ SETTING is_baseline False
+Peak hop Detectors=['AX']
+Peak hop Deflections=[None]
+Peak hop DeflectionsPairs=[('AX', None)]
+----------------------- HOP Ar40 AX
+detector Detector(AX)
+POSITION Ar40 AX
+Mapping mass to dac mass func: "parabolic"
+AX map mass coeffs = [ 0.       0.       3.63928]
+AX map mass to dac 39.9624 >> 3.63928
+GetHighVoltage ===>> 9000
+positioning Ar40 (3.63928) on AX
+setting magnet DAC
+current  : 3.565010
+requested: 3.639280
+Delta Dac: 0.074270
+Checking detector protection. dv=0.07427
+SetMagnetDAC 3.63928 ===>> OK
+Magnet settling time: 0.500
+update detector isotope pairing
+detectors=['AX']
+isotopes=['Ar40']
+updating pairing AX - Ar40
+could not locate det=AX iso=Ar40
+Get Checksum: 1499143366
+Get Checksum: 1499143366
+Join finished
+delaying 5 for detectors to settle after peak hop
+GetData ===>> L2(CDD),0,H2,0.172566459488119,H1,-0.275300316225276,AX,487.331817718647,L1,0.277050097257737
+GetData ===>> L2(CDD),0,H2,0.172566459488119,H1,-0.275300316225276,AX,487.331817718647,L1,0.277050097257737
+GetData ===>> L2(CDD),0,H2,0.0382805808671298,H1,-0.0729681967695556,AX,487.121509251112,L1,-0.0838112426590414
+GetData ===>> L2(CDD),0,H2,-0.282555376988372,H1,0.0124123754529946,AX,487.46624459655,L1,0.198565449829138
+Get Checksum: 1499143366
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+GetData ===>> L2(CDD),0,H2,0.0642737174703856,H1,-0.0859527361262794,AX,486.89011169132,L1,0.0831584046830983
+GetData ===>> L2(CDD),0,H2,-0.253657649529662,H1,0.145726899628944,AX,486.90275836116,L1,0.181945987635092
+GetData ===>> L2(CDD),0,H2,0.341615691835892,H1,0.0504511068524492,AX,486.869848553653,L1,-0.218335293048262
+Get Checksum: 1499143366
+GetData ===>> L2(CDD),0,H2,-0.0901596672148609,H1,-0.115023681633903,AX,486.405470536469,L1,-0.201722699773509
+GetData ===>> L2(CDD),0,H2,-0.0110228881630569,H1,0.0429811469793286,AX,486.41566998883,L1,0.169250757279373
+08:16:41 -- collecting point 150
+GetData ===>> L2(CDD),0,H2,0.0436423372531112,H1,0.0371201420391207,AX,486.748564266841,L1,0.143976203259437
+Get Checksum: 1499143366
+$$$$$$$$$$$$$$$$$ SETTING is_baseline False
+Peak hop Detectors=['L1']
+Peak hop Deflections=[None]
+Peak hop DeflectionsPairs=[('L1', None)]
+----------------------- HOP Ar40 L1
+detector Detector(L1)
+POSITION Ar40 L1
+Mapping mass to dac mass func: "parabolic"
+L1 map mass coeffs = [ 0.       0.       3.71626]
+L1 map mass to dac 39.9624 >> 3.71626
+GetHighVoltage ===>> 9000
+positioning Ar40 (3.71626) on L1
+setting magnet DAC
+current  : 3.639280
+requested: 3.716260
+Delta Dac: 0.076980
+Checking detector protection. dv=0.07698
+SetMagnetDAC 3.71626 ===>> OK
+Magnet settling time: 0.500
+update detector isotope pairing
+detectors=['L1']
+isotopes=['Ar40']
+updating pairing L1 - Ar40
+could not locate det=L1 iso=Ar40
+Get Checksum: 1499143366
+Get Checksum: 1499143366
+Join finished
+delaying 5 for detectors to settle after peak hop
+GetData ===>> L2(CDD),0,H2,0.0557646774225998,H1,0.0389588848532361,AX,-0.27192691981145,L1,487.303245733824
+GetData ===>> L2(CDD),0,H2,0.0557646774225998,H1,0.0389588848532361,AX,-0.27192691981145,L1,487.303245733824
+GetData ===>> L2(CDD),0,H2,0.0367653072153413,H1,-0.159030600030919,AX,0.00748000481017429,L1,486.616457794996
+GetData ===>> L2(CDD),0,H2,-0.0576432678419941,H1,-0.111461676123257,AX,-0.107411119814389,L1,486.976629891036
+Get Checksum: 1499143366
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+GetData ===>> L2(CDD),0,H2,-0.0378298779909901,H1,-0.127777851556115,AX,-0.153959906547134,L1,486.874084030772
+GetData ===>> L2(CDD),0,H2,-0.0912085653255172,H1,-0.107784753411599,AX,-0.188124824619432,L1,486.734000190851
+GetData ===>> L2(CDD),0,H2,0.0998259868761972,H1,0.00425320548993468,AX,0.0227310554968992,L1,486.744253200962
+Get Checksum: 1499143366
+GetData ===>> L2(CDD),0,H2,0.0854883588184588,H1,-0.0696358531738082,AX,-0.048247343436268,L1,486.314134537122
+GetData ===>> L2(CDD),0,H2,0.0768625700164227,H1,-0.0266590800036535,AX,-0.0310478888707553,L1,486.443197415676
+GetData ===>> L2(CDD),0.000157244698251559,H2,0.0409614553859862,H1,-0.0694060359499923,AX,-0.15625289203984,L1...
+Get Checksum: 1499143366
+$$$$$$$$$$$$$$$$$ SETTING is_baseline False
+Peak hop Detectors=['H2']
+Peak hop Deflections=[None]
+Peak hop DeflectionsPairs=[('H2', None)]
+----------------------- HOP Ar40 H2
+detector Detector(H2)
+POSITION Ar40 H2
+Mapping mass to dac mass func: "parabolic"
+H2 map mass coeffs = [  1.08772369e-05   9.93017553e-02  -4.91907340e-01]
+H2 map mass to dac 39.9624 >> 3.4938
+GetHighVoltage ===>> 9000
+positioning Ar40 (3.4938) on H2
+setting magnet DAC
+current  : 3.716260
+requested: 3.493800
+Delta Dac: 0.222460
+Checking detector protection. dv=0.22246
+Move 0.22246>0.15. Do AF Demag
+Doing AF Demagnetization around target=3.4938. duration=4, start_amplitude=0.2, period=0.5
+set af dac raw:-0.1875 dac:3.3063
+SetMagnetDAC 3.3063 ===>> OK
+set af dac raw:0.1625 dac:3.6563
+SetMagnetDAC 3.6563 ===>> OK
+set af dac raw:-0.1375 dac:3.3563
+SetMagnetDAC 3.3563 ===>> OK
+set af dac raw:0.1125 dac:3.6063
+SetMagnetDAC 3.6063 ===>> OK
+set af dac raw:-0.0875 dac:3.4063
+Get Checksum: 1499143366
+SetMagnetDAC 3.4063 ===>> OK
+set af dac raw:0.0625 dac:3.5563
+SetMagnetDAC 3.5563 ===>> OK
+set af dac raw:-0.0375 dac:3.4563
+SetMagnetDAC 3.4563 ===>> OK
+set af dac raw:0.0125 dac:3.5063
+SetMagnetDAC 3.5063 ===>> OK
+SetMagnetDAC 3.4938 ===>> OK
+Magnet settling time: 0.500
+update detector isotope pairing
+detectors=['H2']
+isotopes=['Ar40']
+updating pairing H2 - Ar40
+could not locate det=H2 iso=Ar40
+Get Checksum: 1499143366
+Get Checksum: 1499143366
+Join finished
+delaying 5 for detectors to settle after peak hop
+GetData ===>> L2(CDD),1.55214006645023,H2,482.11067876932,H1,0.1279122544999,AX,0.109425829769398,L1,-0.0399657...
+GetData ===>> L2(CDD),1.55214006645023,H2,482.11067876932,H1,0.1279122544999,AX,0.109425829769398,L1,-0.0399657...
+GetData ===>> L2(CDD),1.57416267270591,H2,481.732783138724,H1,-0.0865272692279519,AX,0.218378748963555,L1,0.083...
+Get Checksum: 1499143366
+GetData ===>> L2(CDD),1.58611785107923,H2,481.39259186005,H1,-0.0224072630614963,AX,0.297979520025122,L1,0.0601...
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+GetData ===>> L2(CDD),1.58769090344599,H2,481.327507648043,H1,0.0327531419022937,AX,0.115389249444649,L1,0.0158...
+GetData ===>> L2(CDD),1.63661313164069,H2,481.931737412687,H1,0.168254276756818,AX,0.155299239889756,L1,0.14547...
+Get Checksum: 1499143366
+GetData ===>> L2(CDD),1.59602809100998,H2,481.648273704028,H1,0.302624916597622,AX,0.0930266161793924,L1,0.2877...
+GetData ===>> L2(CDD),1.59130892616726,H2,480.725933807421,H1,0.121246213808692,AX,0.190967327121144,L1,0.24415...
+GetData ===>> L2(CDD),1.59838767545698,H2,480.699507387398,H1,0.0626330116551824,AX,0.21677303745599,L1,0.22314...
+Get Checksum: 1499143366
+GetData ===>> L2(CDD),1.57872451299494,H2,481.042950318819,H1,0.108259059928594,AX,0.200830761386345,L1,0.02522...
+$$$$$$$$$$$$$$$$$ SETTING is_baseline False
+Peak hop Detectors=['H1']
+Peak hop Deflections=[None]
+Peak hop DeflectionsPairs=[('H1', None)]
+----------------------- HOP Ar40 H1
+detector Detector(H1)
+POSITION Ar40 H1
+Mapping mass to dac mass func: "parabolic"
+H1 map mass coeffs = [ 0.       0.       3.56501]
+H1 map mass to dac 39.9624 >> 3.56501
+GetHighVoltage ===>> 9000
+positioning Ar40 (3.56501) on H1
+setting magnet DAC
+current  : 3.493800
+requested: 3.565010
+Delta Dac: 0.071210
+Checking detector protection. dv=0.07121
+SetMagnetDAC 3.56501 ===>> OK
+Magnet settling time: 0.500
+update detector isotope pairing
+detectors=['H1']
+isotopes=['Ar40']
+updating pairing H1 - Ar40
+could not locate det=H1 iso=Ar40
+Get Checksum: 1499143366
+Get Checksum: 1499143366
+Join finished
+delaying 5 for detectors to settle after peak hop
+GetData ===>> L2(CDD),0.000157244698251559,H2,-0.196209227954885,H1,482.059722527589,AX,-0.0272639676152903,L1,...
+GetData ===>> L2(CDD),0.000157244698251559,H2,-0.196209227954885,H1,482.059722527589,AX,-0.0272639676152903,L1,...
+GetData ===>> L2(CDD),0,H2,-0.0790878963294902,H1,482.515591775781,AX,-0.0321945287381727,L1,0.145245685671455
+Get Checksum: 1499143366
+GetData ===>> L2(CDD),0,H2,-0.0266409628707662,H1,481.711435631601,AX,0.0845404195571913,L1,0.104853879389249
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+GetData ===>> L2(CDD),0,H2,0.185623014329202,H1,481.946536203116,AX,-0.00845880492696913,L1,0.0869666177302786
+GetData ===>> L2(CDD),0,H2,0.0428264159071966,H1,481.408788040005,AX,0.089586257179252,L1,0.166250090785986
+Get Checksum: 1499143366
+GetData ===>> L2(CDD),0,H2,-0.168474299398293,H1,481.193005615877,AX,-0.292561062919752,L1,0.0216520683181189
+GetData ===>> L2(CDD),0.000157244698251559,H2,0.122090525045583,H1,482.027833934625,AX,-0.155335698498208,L1,0....
+GetData ===>> L2(CDD),0,H2,0.164639350499963,H1,481.165855969903,AX,-0.26103649922862,L1,0.286861125435427
+Get Checksum: 1499143366
+GetData ===>> L2(CDD),0,H2,-0.0837497098728778,H1,482.14777964413,AX,0.0275472269765751,L1,-0.173226823896361
+$$$$$$$$$$$$$$$$$ SETTING is_baseline False
+Peak hop Detectors=['AX']
+Peak hop Deflections=[None]
+Peak hop DeflectionsPairs=[('AX', None)]
+----------------------- HOP Ar40 AX
+detector Detector(AX)
+POSITION Ar40 AX
+Mapping mass to dac mass func: "parabolic"
+AX map mass coeffs = [ 0.       0.       3.63928]
+AX map mass to dac 39.9624 >> 3.63928
+GetHighVoltage ===>> 9000
+positioning Ar40 (3.63928) on AX
+setting magnet DAC
+current  : 3.565010
+requested: 3.639280
+Delta Dac: 0.074270
+Checking detector protection. dv=0.07427
+SetMagnetDAC 3.63928 ===>> OK
+Magnet settling time: 0.500
+update detector isotope pairing
+detectors=['AX']
+isotopes=['Ar40']
+updating pairing AX - Ar40
+could not locate det=AX iso=Ar40
+Get Checksum: 1499143366
+Get Checksum: 1499143366
+Join finished
+delaying 5 for detectors to settle after peak hop
+GetData ===>> L2(CDD),0,H2,-0.0678994531702638,H1,-0.0618220368387711,AX,483.111702647953,L1,0.147092208515316
+GetData ===>> L2(CDD),0,H2,-0.0678994531702638,H1,-0.0618220368387711,AX,483.111702647953,L1,0.147092208515316
+GetData ===>> L2(CDD),0,H2,-0.162997140679378,H1,0.00436812289747085,AX,483.226491991731,L1,0.121241209113029
+Get Checksum: 1499143366
+GetData ===>> L2(CDD),0,H2,-0.151343509432125,H1,0.0995244353059729,AX,482.773711594246,L1,-0.0287732891806453
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+GetData ===>> L2(CDD),0,H2,-0.178612788855694,H1,-0.192120641757093,AX,482.39939253977,L1,-0.0760807336402017
+GetData ===>> L2(CDD),0,H2,-0.0178995338742882,H1,0.12998103511485,AX,481.941380149578,L1,0.124587951397186
+Get Checksum: 1499143366
+GetData ===>> L2(CDD),0,H2,-0.0806029881684658,H1,-0.146047044396527,AX,482.680622916969,L1,0.221302259426671
+GetData ===>> L2(CDD),0,H2,-0.239791098109142,H1,-0.18086096331413,AX,482.342466085079,L1,0.00918972193893327
+GetData ===>> L2(CDD),0.000157244698251559,H2,-0.14458433968501,H1,-0.029072265066238,AX,482.344903686651,L1,0....
+Get Checksum: 1499143366
+GetData ===>> L2(CDD),0,H2,-0.154723076789049,H1,0.111706959840212,AX,482.447144010185,L1,0.140398579959981
+$$$$$$$$$$$$$$$$$ SETTING is_baseline False
+Peak hop Detectors=['L1']
+Peak hop Deflections=[None]
+Peak hop DeflectionsPairs=[('L1', None)]
+----------------------- HOP Ar40 L1
+detector Detector(L1)
+POSITION Ar40 L1
+Mapping mass to dac mass func: "parabolic"
+L1 map mass coeffs = [ 0.       0.       3.71626]
+L1 map mass to dac 39.9624 >> 3.71626
+GetHighVoltage ===>> 9000
+positioning Ar40 (3.71626) on L1
+setting magnet DAC
+current  : 3.639280
+requested: 3.716260
+Delta Dac: 0.076980
+Checking detector protection. dv=0.07698
+SetMagnetDAC 3.71626 ===>> OK
+Magnet settling time: 0.500
+update detector isotope pairing
+detectors=['L1']
+isotopes=['Ar40']
+updating pairing L1 - Ar40
+could not locate det=L1 iso=Ar40
+Get Checksum: 1499143366
+Get Checksum: 1499143366
+Join finished
+delaying 5 for detectors to settle after peak hop
+GetData ===>> L2(CDD),0.000157244698251559,H2,0.0642737174703856,H1,-0.130075882259757,AX,0.0813294457526869,L1...
+GetData ===>> L2(CDD),0.000157244698251559,H2,0.0642737174703856,H1,-0.130075882259757,AX,0.0813294457526869,L1...
+GetData ===>> L2(CDD),0,H2,-0.101464398698002,H1,-0.0654991347639389,AX,0.108164341880432,L1,482.793195635519
+GetData ===>> L2(CDD),0,H2,-0.124656170793199,H1,-0.0322898357582969,AX,0.0504817075240747,L1,482.339036576626
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+GetData ===>> L2(CDD),0,H2,-0.248996645778273,H1,0.0988348630462262,AX,-0.145246511846157,L1,482.232547915805
+Get Checksum: 1499143366
+GetData ===>> L2(CDD),0,H2,-0.0457552820943078,H1,-0.0612474890215522,AX,0.0758249441541118,L1,482.225631520563
+GetData ===>> L2(CDD),0,H2,-0.0273402738155492,H1,-0.021947606053369,AX,-0.102366288484655,L1,482.165258833312
+GetData ===>> L2(CDD),0,H2,-0.174301030321038,H1,0.0142510711708483,AX,0.0676829265953438,L1,481.889081414634
+Get Checksum: 1499143366
+GetData ===>> L2(CDD),0,H2,-0.0993666233474916,H1,0.0946974398392745,AX,0.113898391061949,L1,482.353014810107
+08:18:01 -- collecting point 200
+GetData ===>> L2(CDD),0,H2,-0.00321375729092204,H1,0.0534391069989106,AX,-0.0868876636741515,L1,481.791850857406
+$$$$$$$$$$$$$$$$$ SETTING is_baseline False
+Peak hop Detectors=['H2']
+Peak hop Deflections=[None]
+Peak hop DeflectionsPairs=[('H2', None)]
+----------------------- HOP Ar40 H2
+detector Detector(H2)
+POSITION Ar40 H2
+Mapping mass to dac mass func: "parabolic"
+H2 map mass coeffs = [  1.08772369e-05   9.93017553e-02  -4.91907340e-01]
+H2 map mass to dac 39.9624 >> 3.4938
+GetHighVoltage ===>> 9000
+positioning Ar40 (3.4938) on H2
+setting magnet DAC
+current  : 3.716260
+requested: 3.493800
+Delta Dac: 0.222460
+Checking detector protection. dv=0.22246
+Move 0.22246>0.15. Do AF Demag
+Doing AF Demagnetization around target=3.4938. duration=4, start_amplitude=0.2, period=0.5
+set af dac raw:-0.1875 dac:3.3063
+SetMagnetDAC 3.3063 ===>> OK
+Get Checksum: 1499143366
+set af dac raw:0.1625 dac:3.6563
+SetMagnetDAC 3.6563 ===>> OK
+set af dac raw:-0.1375 dac:3.3563
+SetMagnetDAC 3.3563 ===>> OK
+set af dac raw:0.1125 dac:3.6063
+SetMagnetDAC 3.6063 ===>> OK
+set af dac raw:-0.0875 dac:3.4063
+SetMagnetDAC 3.4063 ===>> OK
+set af dac raw:0.0625 dac:3.5563
+SetMagnetDAC 3.5563 ===>> OK
+Get Checksum: 1499143366
+set af dac raw:-0.0375 dac:3.4563
+SetMagnetDAC 3.4563 ===>> OK
+set af dac raw:0.0125 dac:3.5063
+SetMagnetDAC 3.5063 ===>> OK
+SetMagnetDAC 3.4938 ===>> OK
+Magnet settling time: 0.500
+update detector isotope pairing
+detectors=['H2']
+isotopes=['Ar40']
+updating pairing H2 - Ar40
+could not locate det=H2 iso=Ar40
+Get Checksum: 1499143366
+Get Checksum: 1499143366
+Join finished
+delaying 5 for detectors to settle after peak hop
+GetData ===>> L2(CDD),1.57101657889576,H2,477.013200599313,H1,-0.0121798428466689,AX,0.279856575525623,L1,0.016...
+GetData ===>> L2(CDD),1.57101657889576,H2,477.013200599313,H1,-0.0121798428466689,AX,0.279856575525623,L1,0.016...
+GetData ===>> L2(CDD),1.59445503546222,H2,477.280141980033,H1,0.0283861615353046,AX,0.152432087701569,L1,0.0465...
+GetData ===>> L2(CDD),1.57117388352925,H2,477.019869795518,H1,-0.359851306919036,AX,0.370474710346131,L1,-0.012...
+Get Checksum: 1499143366
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+GetData ===>> L2(CDD),1.55984796525866,H2,477.10512274142,H1,-0.0274634756952214,AX,0.265519044735173,L1,0.1612...
+GetData ===>> L2(CDD),1.57856720807336,H2,477.027698898581,H1,-0.0538932467386626,AX,0.313349879607004,L1,0.006...
+GetData ===>> L2(CDD),1.56425248533343,H2,476.585433551561,H1,-0.128697064494467,AX,0.407527366904635,L1,0.0420...
+Get Checksum: 1499143366
+GetData ===>> L2(CDD),1.56283674622481,H2,476.944625985012,H1,-0.0213730344851362,AX,0.0476148675674283,L1,0.12...
+GetData ===>> L2(CDD),1.54301644974954,H2,476.275899985953,H1,0.106650044187147,AX,-0.141119086819179,L1,0.1076...
+Get Checksum: 1499143366
+GetData ===>> L2(CDD),1.58879204045984,H2,476.831406592954,H1,-0.0440108953747109,AX,0.0571328091109817,L1,-0.0...
+$$$$$$$$$$$$$$$$$ SETTING is_baseline False
+Peak hop Detectors=['H1']
+Peak hop Deflections=[None]
+Peak hop DeflectionsPairs=[('H1', None)]
+----------------------- HOP Ar40 H1
+detector Detector(H1)
+POSITION Ar40 H1
+Mapping mass to dac mass func: "parabolic"
+H1 map mass coeffs = [ 0.       0.       3.56501]
+H1 map mass to dac 39.9624 >> 3.56501
+GetHighVoltage ===>> 9000
+positioning Ar40 (3.56501) on H1
+setting magnet DAC
+current  : 3.493800
+requested: 3.565010
+Delta Dac: 0.071210
+Checking detector protection. dv=0.07121
+SetMagnetDAC 3.56501 ===>> OK
+Magnet settling time: 0.500
+update detector isotope pairing
+detectors=['H1']
+isotopes=['Ar40']
+updating pairing H1 - Ar40
+could not locate det=H1 iso=Ar40
+Get Checksum: 1499143366
+Get Checksum: 1499143366
+Join finished
+delaying 5 for detectors to settle after peak hop
+GetData ===>> L2(CDD),0,H2,-0.0506503525476842,H1,477.843923246731,AX,0.10036608981604,L1,-0.0436580757912727
+GetData ===>> L2(CDD),0,H2,-0.0506503525476842,H1,477.843923246731,AX,0.10036608981604,L1,-0.0436580757912727
+GetData ===>> L2(CDD),0,H2,-0.126171192046163,H1,477.822115902033,AX,-0.0702621967567689,L1,0.0569629207696693
+GetData ===>> L2(CDD),0,H2,0.215467222664042,H1,477.584986540038,AX,0.0401611236454926,L1,0.0185364666866467
+Get Checksum: 1499143366
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+GetData ===>> L2(CDD),0,H2,-0.0338671518575691,H1,477.589289741947,AX,-0.150979017238083,L1,0.166019270671306
+GetData ===>> L2(CDD),0,H2,-0.197491075385531,H1,477.585273419686,AX,-0.263329229593577,L1,-0.056004198055695
+GetData ===>> L2(CDD),0,H2,-0.0804864427257778,H1,477.071868327296,AX,0.155413926155342,L1,0.0339991807751115
+Get Checksum: 1499143366
+GetData ===>> L2(CDD),0,H2,-0.209726807210925,H1,477.330407813076,AX,-0.0277226255297204,L1,-0.0367349476906406
+GetData ===>> L2(CDD),0.000157244698251559,H2,-0.0511165484562832,H1,477.091941506098,AX,-0.456815987608806,L1,...
+Get Checksum: 1499143366
+GetData ===>> L2(CDD),0,H2,-0.119994552219238,H1,476.912011750134,AX,-0.16599801943178,L1,0.11027782401622
+$$$$$$$$$$$$$$$$$ SETTING is_baseline False
+Peak hop Detectors=['AX']
+Peak hop Deflections=[None]
+Peak hop DeflectionsPairs=[('AX', None)]
+----------------------- HOP Ar40 AX
+detector Detector(AX)
+POSITION Ar40 AX
+Mapping mass to dac mass func: "parabolic"
+AX map mass coeffs = [ 0.       0.       3.63928]
+AX map mass to dac 39.9624 >> 3.63928
+GetHighVoltage ===>> 9000
+positioning Ar40 (3.63928) on AX
+setting magnet DAC
+current  : 3.565010
+requested: 3.639280
+Delta Dac: 0.074270
+Checking detector protection. dv=0.07427
+SetMagnetDAC 3.63928 ===>> OK
+Magnet settling time: 0.500
+update detector isotope pairing
+detectors=['AX']
+isotopes=['Ar40']
+updating pairing AX - Ar40
+could not locate det=AX iso=Ar40
+Get Checksum: 1499143366
+Get Checksum: 1499143366
+Join finished
+delaying 5 for detectors to settle after peak hop
+GetData ===>> L2(CDD),0,H2,-0.0945883404761063,H1,-0.314360118978611,AX,477.891378903092,L1,0.0338837864725516
+GetData ===>> L2(CDD),0,H2,-0.0945883404761063,H1,-0.314360118978611,AX,477.891378903092,L1,0.0338837864725516
+GetData ===>> L2(CDD),0,H2,-0.212873113509445,H1,-0.226932897734813,AX,478.177927861317,L1,-0.00488792085936566
+GetData ===>> L2(CDD),0,H2,0.12838530312072,H1,-0.199358937059858,AX,478.507945178786,L1,0.117894478395222
+Get Checksum: 1499143366
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+GetData ===>> L2(CDD),0,H2,0.00214777164401252,H1,-0.163741404440332,AX,478.182224467684,L1,-0.0891187205800991
+GetData ===>> L2(CDD),0,H2,-0.00286409325608125,H1,0.147565849471484,AX,478.088848350914,L1,0.175482940475394
+GetData ===>> L2(CDD),0,H2,0.0652062195100639,H1,0.223885359507642,AX,477.665023477871,L1,0.137628816160183
+Get Checksum: 1499143366
+GetData ===>> L2(CDD),0,H2,-0.144351264032854,H1,0.20480491595143,AX,478.142982700211,L1,0.127703894266374
+GetData ===>> L2(CDD),0,H2,-0.203550695041057,H1,-0.0659587710184496,AX,477.90985001345,L1,-0.0564657322841555
+GetData ===>> L2(CDD),0,H2,-0.145167028571887,H1,0.0458542016233601,AX,477.228039085177,L1,-0.037427262728523
+Get Checksum: 1499143366
+$$$$$$$$$$$$$$$$$ SETTING is_baseline False
+Peak hop Detectors=['L1']
+Peak hop Deflections=[None]
+Peak hop DeflectionsPairs=[('L1', None)]
+----------------------- HOP Ar40 L1
+detector Detector(L1)
+POSITION Ar40 L1
+Mapping mass to dac mass func: "parabolic"
+L1 map mass coeffs = [ 0.       0.       3.71626]
+L1 map mass to dac 39.9624 >> 3.71626
+GetHighVoltage ===>> 9000
+positioning Ar40 (3.71626) on L1
+setting magnet DAC
+current  : 3.639280
+requested: 3.716260
+Delta Dac: 0.076980
+Checking detector protection. dv=0.07698
+SetMagnetDAC 3.71626 ===>> OK
+Magnet settling time: 0.500
+update detector isotope pairing
+detectors=['L1']
+isotopes=['Ar40']
+updating pairing L1 - Ar40
+could not locate det=L1 iso=Ar40
+Get Checksum: 1499143366
+Get Checksum: 1499143366
+Join finished
+delaying 5 for detectors to settle after peak hop
+GetData ===>> L2(CDD),0,H2,-0.187352781622648,H1,0.16871402462479,AX,-0.0845945128992403,L1,477.632958038118
+GetData ===>> L2(CDD),0,H2,-0.187352781622648,H1,0.16871402462479,AX,-0.0845945128992403,L1,477.632958038118
+GetData ===>> L2(CDD),0,H2,-0.35980599623603,H1,-0.110772254182621,AX,-0.21391968061781,L1,477.658280213034
+GetData ===>> L2(CDD),0.000157244698251559,H2,0.117544321627704,H1,0.0713673022431666,AX,0.0439453248838085,L1,...
+Get Checksum: 1499143366
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+GetData ===>> L2(CDD),0,H2,-0.134562036492793,H1,0.212620955631846,AX,-0.1087869783146,L1,477.412706297426
+GetData ===>> L2(CDD),0,H2,-0.0607900634132947,H1,-0.0051699753480871,AX,-0.225154557290899,L1,477.17235982959
+GetData ===>> L2(CDD),0,H2,-0.21998139788228,H1,-0.0683718577640099,AX,-0.228593779029563,L1,477.403931587016
+Get Checksum: 1499143366
+GetData ===>> L2(CDD),0,H2,0.0944639225142579,H1,-0.00195231419273715,AX,-0.115551587329557,L1,477.748350890071
+GetData ===>> L2(CDD),0,H2,-0.0947048842388224,H1,0.112166680759675,AX,0.0762836514177643,L1,477.703602477259
+GetData ===>> L2(CDD),0,H2,-0.0902762115048958,H1,0.0917093118928504,AX,0.0861459104763972,L1,477.930095415571
+Get Checksum: 1499143366
+$$$$$$$$$$$$$$$$$ SETTING is_baseline False
+measurement finished
+estimated time: 402.653 actual time: :384.192
+flush and close file /Users/obama/PychronDev/data/isotopes/39/f33bf2-79e6-4d7c-a848-35d959b4cf04.h5
+define_detectors ('Ar40', 'H2') {}
+setting detector H2 to Ar40 (39.9624)
+setting detector H1 to Ar39 (38.8624)
+setting detector AX to Ar38 (37.9624)
+setting detector L1 to Ar37 (36.9624)
+setting detector L2 to Ar36 (35.8624)
+setting detector H2(CDD) to Ar40 (39.8624)
+setting detector H1(CDD) to Ar39 (38.8624)
+setting detector AX(CDD) to Ar38 (37.8624)
+setting detector L1(CDD) to Ar37 (36.8624)
+setting detector L2(CDD) to Ar36 (35.9624)
+define_detectors ('Ar39', 'H1') {}
+setting detector H2 to Ar40 (40.064)
+setting detector H1 to Ar39 (38.964)
+setting detector AX to Ar38 (38.064)
+setting detector L1 to Ar37 (37.064)
+setting detector L2 to Ar36 (35.964)
+setting detector H2(CDD) to Ar40 (39.964)
+setting detector H1(CDD) to Ar39 (38.964)
+setting detector AX(CDD) to Ar38 (37.964)
+setting detector L1(CDD) to Ar37 (36.964)
+setting detector L2(CDD) to Ar36 (36.064)
+define_detectors ('Ar38', 'AX') {}
+setting detector H2 to Ar40 (39.9627)
+setting detector H1 to Ar39 (38.8627)
+setting detector AX to Ar38 (37.9627)
+setting detector L1 to Ar37 (36.9627)
+setting detector L2 to Ar36 (35.8627)
+setting detector H2(CDD) to Ar40 (39.8627)
+setting detector H1(CDD) to Ar39 (38.8627)
+setting detector AX(CDD) to Ar38 (37.8627)
+setting detector L1(CDD) to Ar37 (36.8627)
+setting detector L2(CDD) to Ar36 (35.9627)
+define_detectors ('Ar37', 'L1') {}
+setting detector H2 to Ar40 (39.9668)
+setting detector H1 to Ar39 (38.8668)
+setting detector AX to Ar38 (37.9668)
+setting detector L1 to Ar37 (36.9668)
+setting detector L2 to Ar36 (35.8668)
+setting detector H2(CDD) to Ar40 (39.8668)
+setting detector H1(CDD) to Ar39 (38.8668)
+setting detector AX(CDD) to Ar38 (37.8668)
+setting detector L1(CDD) to Ar37 (36.8668)
+setting detector L2(CDD) to Ar36 (35.9668)
+baselines () {'settling_time': 10, 'detector': 'H2', 'mass': 39.85, 'ncounts': 60}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Baseline
+build tables- baseline [Detector(H2), Detector(H1), Detector(AX), Detector(L1)]
+add group baseline table H2
+add group baseline table H1
+add group baseline table AX
+add group baseline table L1
+flush and close file /Users/obama/PychronDev/data/isotopes/39/f33bf2-79e6-4d7c-a848-35d959b4cf04.h5
+detector Detector(H2)
+POSITION 39.85 H2
+Mapping mass to dac mass func: "parabolic"
+H2 map mass coeffs = [  1.08772369e-05   9.93017553e-02  -4.91907340e-01]
+H2 map mass to dac 39.85 >> 3.48254090395
+GetHighVoltage ===>> 9000
+positioning 39.85 (3.48254090395) on H2
+setting magnet DAC
+current  : 3.716260
+requested: 3.482541
+Delta Dac: 0.233719
+Checking detector protection. dv=0.23372
+Move 0.233719096045>0.15. Do AF Demag
+Doing AF Demagnetization around target=3.48254090395. duration=4, start_amplitude=0.2, period=0.5
+set af dac raw:-0.1875 dac:3.29504090395
+SetMagnetDAC 3.29504090395 ===>> OK
+set af dac raw:0.1625 dac:3.64504090395
+SetMagnetDAC 3.64504090395 ===>> OK
+set af dac raw:-0.1375 dac:3.34504090395
+SetMagnetDAC 3.34504090395 ===>> OK
+set af dac raw:0.1125 dac:3.59504090395
+SetMagnetDAC 3.59504090395 ===>> OK
+Get Checksum: 1499143366
+set af dac raw:-0.0875 dac:3.39504090395
+SetMagnetDAC 3.39504090395 ===>> OK
+set af dac raw:0.0625 dac:3.54504090395
+SetMagnetDAC 3.54504090395 ===>> OK
+set af dac raw:-0.0375 dac:3.44504090395
+SetMagnetDAC 3.44504090395 ===>> OK
+set af dac raw:0.0125 dac:3.49504090395
+SetMagnetDAC 3.49504090395 ===>> OK
+SetMagnetDAC 3.48254090395 ===>> OK
+Magnet settling time: 0.500
+Delaying 10s for detectors to settle
+Get Checksum: 1499143366
+Get Checksum: 1499143366
+set states for children of O. state=True
+handle state [('O', True)]
+update switch state O True args=() kw={'refresh': False} ncanvase=4
+refresh_canvas_needed fired
+Get Checksum: 1509310064
+Get Checksum: 1509310064
+Join finished
+measuring baseline. ncounts=60
+starting measurement
+GetData ===>> L2(CDD),0.000157244698251559,H2,0.020097451968281,H1,0.106650044187147,AX,0.019520287899867,L1,0....
+GetData ===>> L2(CDD),0,H2,-0.215087174837837,H1,-0.243821559367842,AX,-0.265965862760489,L1,0.171097325897084
+Get Checksum: 1509310064
+GetData ===>> L2(CDD),0.000157244698251559,H2,-0.0893438567951709,H1,-0.0756110817797684,AX,-0.11738604937544,L...
+GetData ===>> L2(CDD),0.000157244698251559,H2,0.139459548052806,H1,0.0405677876912973,AX,0.0653894129566803,L1,...
+GetData ===>> L2(CDD),0,H2,-0.0347995594505502,H1,0.147335980549799,AX,-0.0959455558166084,L1,0.09031324155929
+Get Checksum: 1509310064
+GetData ===>> L2(CDD),0,H2,-0.0574101714708498,H1,0.170093269542839,AX,0.10013673041739,L1,0.183330931924376
+GetData ===>> L2(CDD),0,H2,0.24892646068878,H1,-0.147540736684786,AX,-0.18285112448474,L1,-0.125462624628143
+GetData ===>> L2(CDD),0,H2,-0.139806277717075,H1,-0.146506642270172,AX,-0.209333978974755,L1,-0.0902725162786177
+Get Checksum: 1509310064
+GetData ===>> L2(CDD),0,H2,-0.0847986148578476,H1,-0.139153050014115,AX,-0.0983533355872495,L1,0.147900063366549
+GetData ===>> L2(CDD),0,H2,0.116728338635588,H1,-0.0783688671135751,AX,0.0265151882018595,L1,-0.0421580689035632
+GetData ===>> L2(CDD),0,H2,-0.157286878718055,H1,0.124924023666337,AX,-0.136647689730226,L1,0.122279852032163
+Get Checksum: 1509310064
+GetData ===>> L2(CDD),0.000157244698251559,H2,0.0518015881457852,H1,-0.0798626642104701,AX,-0.112570579047505,L...
+GetData ===>> L2(CDD),0,H2,0.0361825102819096,H1,-0.236928263807857,AX,-0.121513576192176,L1,0.0138053870814493
+GetData ===>> L2(CDD),0,H2,-0.0283892392951569,H1,0.0634374824817754,AX,-0.214378249580278,L1,0.39940649909458
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+GetData ===>> L2(CDD),0,H2,-0.215087174837837,H1,0.00161010889253751,AX,-0.121972189190031,L1,0.0695412805512304
+GetData ===>> L2(CDD),0,H2,0.0844392723336697,H1,0.0359709295599697,AX,-0.151896214931956,L1,0.15574783127991
+Get Checksum: 1509310064
+GetData ===>> L2(CDD),0,H2,-0.14644894290145,H1,-0.0133289965930332,AX,-0.162673222353601,L1,0.202258702384282
+GetData ===>> L2(CDD),0,H2,-0.310986178764987,H1,0.22434513388815,AX,0.00564530823125763,L1,0.0300757821814562
+Get Checksum: 1509310064
+GetData ===>> L2(CDD),0,H2,0.0671877892965251,H1,-0.038035471013933,AX,-0.10110507651991,L1,0.211607310863631
+GetData ===>> L2(CDD),0,H2,0.0350169174568337,H1,0.042406537077577,AX,-0.0456101136887842,L1,-0.173803671806066
+GetData ===>> L2(CDD),0,H2,0.0927154296205991,H1,-0.235319821088138,AX,-0.393318106103105,L1,0.193487250565073
+Get Checksum: 1509310064
+GetData ===>> L2(CDD),0,H2,0.0809423255100074,H1,-0.240489805998595,AX,-0.254502187718372,L1,0.142129686357288
+GetData ===>> L2(CDD),0,H2,-0.0161512387007847,H1,0.0112631924094357,AX,0.0682563058593203,L1,0.032152873574457
+GetData ===>> L2(CDD),0,H2,-0.203900287337672,H1,-0.12789275322105,AX,-0.0357491036452251,L1,0.182292223521897
+Get Checksum: 1509310064
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+08:19:47 -- collecting point 25
+GetData ===>> L2(CDD),0,H2,0.0586787238995381,H1,0.131934887547188,AX,-0.399278374267738,L1,-0.15499825293139
+GetData ===>> L2(CDD),0,H2,-0.0197643786160242,H1,-0.0722787473150382,AX,0.0481882348754373,L1,-0.052658068320046
+GetData ===>> L2(CDD),0,H2,-0.00402963955229763,H1,-0.355600958518068,AX,-0.0372397279249059,L1,0.149400367021104
+Get Checksum: 1509310064
+GetData ===>> L2(CDD),0,H2,0.0374646639935146,H1,-0.0628562220468166,AX,-0.0890661518489875,L1,0.117432861272715
+GetData ===>> L2(CDD),0,H2,-0.0106732269198893,H1,0.296187572902179,AX,-0.166571259146206,L1,0.355194807958015
+GetData ===>> L2(CDD),0,H2,0.190635845074768,H1,-0.113070325402219,AX,-0.0749632199752286,L1,-0.0400811324534783
+Get Checksum: 1509310064
+GetData ===>> L2(CDD),0,H2,-0.0810691698006861,H1,0.177104461700694,AX,-0.224008147313135,L1,0.0952754981817307
+GetData ===>> L2(CDD),0,H2,0.0647399683789232,H1,0.188483390217888,AX,-0.12460920968746,L1,-0.135154101979359
+GetData ===>> L2(CDD),0,H2,-0.0983177339854031,H1,0.055277880919885,AX,-0.128163443272275,L1,0.0117283350445418
+Get Checksum: 1509310064
+GetData ===>> L2(CDD),0,H2,-0.266242248702456,H1,0.0468885033898974,AX,-0.0145361232990904,L1,0.034691546883636
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+GetData ===>> L2(CDD),0,H2,0.11101647674852,H1,0.0364306143876955,AX,-0.0341438133775068,L1,0.0768114162192733
+GetData ===>> L2(CDD),0,H2,0.0274405979499442,H1,-0.208665236918023,AX,-0.0805814858947553,L1,-0.287436007631251
+Get Checksum: 1509310064
+GetData ===>> L2(CDD),0,H2,0.0770956984438016,H1,0.174920642285875,AX,-0.383002170108007,L1,0.0967757203057488
+GetData ===>> L2(CDD),0.000157244698251559,H2,-0.00356342120052362,H1,0.251702103929437,AX,-0.0367810745461392,...
+GetData ===>> L2(CDD),0,H2,-0.295722203513626,H1,-0.0676824050241602,AX,-0.0380423708113441,L1,0.0756574227864782
+Get Checksum: 1509310064
+GetData ===>> L2(CDD),0,H2,0.0803595022550691,H1,-0.0480327947752639,AX,0.0742194704512767,L1,-0.103079556200317
+GetData ===>> L2(CDD),0,H2,-0.0544964621466535,H1,0.0220655670711443,AX,-0.0263466511313642,L1,0.0745034307286085
+GetData ===>> L2(CDD),0,H2,-0.181526128456011,H1,-0.0222923488300313,AX,-0.255877835934101,L1,0.194179730714679
+Get Checksum: 1509310064
+GetData ===>> L2(CDD),0,H2,0.00552788107638463,H1,-0.12180294610324,AX,-0.284536726509333,L1,0.173636363495041
+GetData ===>> L2(CDD),0,H2,-0.125238871552917,H1,0.0498764925009844,AX,-0.383919146675149,L1,0.00630494239739842
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+GetData ===>> L2(CDD),0,H2,-0.283487547529011,H1,-0.0427468663853243,AX,-0.137908855115192,L1,0.0628481880345105
+Get Checksum: 1509310064
+GetData ===>> L2(CDD),0,H2,0.076629441645238,H1,-0.125250011458182,AX,-0.0239386912000809,L1,-0.00615720646269924
+GetData ===>> L2(CDD),0,H2,0.0249928764973885,H1,-0.200048295684524,AX,-0.0967481497430168,L1,0.0941214827445218
+GetData ===>> L2(CDD),0,H2,0.0224286034503118,H1,-0.249451047528374,AX,-0.195576742929826,L1,-0.0025801245904143
+Get Checksum: 1509310064
+GetData ===>> L2(CDD),0,H2,0.038863379050792,H1,-0.00436556106563036,AX,-0.114290392645087,L1,-0.134923353646017
+08:20:13 -- collecting point 50
+GetData ===>> L2(CDD),0,H2,-0.0315361289851298,H1,0.0724016313654781,AX,-0.105576638754283,L1,0.0972373275808314
+Get Checksum: 1509310064
+GetData ===>> L2(CDD),0,H2,0.00261399294058386,H1,-0.0943408854340838,AX,0.0775450975216485,L1,-0.0268117110905384
+GetData ===>> L2(CDD),0,H2,-0.120810337073658,H1,0.0560823456126436,AX,-0.552857166999139,L1,0.111316455176863
+GetData ===>> L2(CDD),0,H2,-0.314248676924238,H1,0.023329682650836,AX,-0.211282904843163,L1,0.041499839980329
+Get Checksum: 1509310064
+GetData ===>> L2(CDD),0,H2,-0.175932508758639,H1,-0.0664184070546523,AX,-0.075192537593499,L1,0.165557630608239
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+GetData ===>> L2(CDD),0,H2,0.0035464361993523,H1,-0.0051699753480871,AX,-0.196723186778664,L1,0.0202673552442676
+set states for children of U. state=False
+handle state [('U', False)]
+update switch state U False args=() kw={'refresh': False} ncanvase=4
+refresh_canvas_needed fired
+GetData ===>> L2(CDD),0,H2,0.0406117756842656,H1,-0.157077332918185,AX,0.0507110550894352,L1,0.123433901026997
+Get Checksum: 1041668763
+GetData ===>> L2(CDD),0,H2,0.0708012504179582,H1,0.1852650937926,AX,-0.357097221045235,L1,0.0194596068656687
+GetData ===>> L2(CDD),0,H2,-0.108923119059669,H1,-0.0471135049622784,AX,-0.344029858219962,L1,-0.187071078870825
+GetData ===>> L2(CDD),0,H2,0.264432349297649,H1,-0.0421723072060187,AX,-0.000661434582746698,L1,0.151131489511053
+Get Checksum: 1041668763
+GetData ===>> L2(CDD),0,H2,-0.0295547551756878,H1,0.00172502598535888,AX,-0.219193210492652,L1,0.00411251569375804
+measurement finished
+estimated time: 62.915 actual time: :63.157
+flush and close file /Users/obama/PychronDev/data/isotopes/39/f33bf2-79e6-4d7c-a848-35d959b4cf04.h5
+activate_detectors ('H2', 'L2(CDD)') {'peak_center': True}
+peak_center () {'detector': 'H2', 'isotope': 'Ar40'}
+peak center: mean=476.909660073 threshold=100.0
+peak center started
+setup peak center. detector=['H2', 'L2(CDD)'], isotope=Ar40
+VersionedUnpickler [<apptools.sweet_pickle.versioned_unpickler.VersionedUnpickler object at 0x12f4afc50>] using Updater [<apptools.sweet_pickle.updater.Updater object at 0x12f7cd770>]
+VersionedUnpickler [<apptools.sweet_pickle.versioned_unpickler.VersionedUnpickler object at 0x12f4afc50>] using Updater [<apptools.sweet_pickle.updater.Updater object at 0x12f7cd770>]
+VersionedUnpickler [<apptools.sweet_pickle.versioned_unpickler.VersionedUnpickler object at 0x160850770>] using Updater [<apptools.sweet_pickle.updater.Updater object at 0x12f7cd770>]
+setting integration time = 0.524288
+SetIntegrationTime 0.524288 ===>> OK
+Mapping mass to dac mass func: "parabolic"
+H2 map mass coeffs = [  1.08772369e-05   9.93017553e-02  -4.91907340e-01]
+H2 map mass to dac 39.9624 >> 3.4938
+GetHighVoltage ===>> 9000
+do peak center. <pychron.spectrometer.jobs.peak_center.PeakCenter object at 0x125002bf0>
+doing pc
+starting peak center. center dac= 3.4938 step_width=0.0001
+width = 0.0001
+get scan parameters. half-width=0.002,window=0.002, i=0, scalar=1
+Scan parameters center=3.49380 width=0.00400 (3.49180 - 3.49580)
+GetData ===>> L2(CDD),0,H2,0.25895279667097,H1,-0.149608922188192,AX,-0.172991520620344,L1,-0.0998489675112083
+Moving to starting dac 3.4918
+setting magnet DAC
+current  : 3.482541
+requested: 3.491800
+Delta Dac: 0.009259
+Checking detector protection. dv=0.00926
+SetMagnetDAC 3.4918 ===>> OK
+Magnet settling time: 0.500
+Wait until signal near baseline. tol= 0.194214597503. timeout= 10
+GetData ===>> L2(CDD),0,H2,0.25895279667097,H1,-0.149608922188192,AX,-0.172991520620344,L1,-0.0998489675112083
+GetData ===>> L2(CDD),0,H2,-0.0979681039481404,H1,0.00916227045285011,AX,-0.0898999819079324,L1,0.316183784037332
+Peak center baseline intensity achieved
+_do_sweep sm= 3.4918, em= 3.4958, stm= 0.0001
+calculated step values: start=3.4918, end=3.4958, width=0.0001, nsteps=41.0
+setting magnet DAC
+current  : 3.491800
+requested: 3.491800
+Delta Dac: 0.000000
+Checking detector protection. dv=0.00000
+GetData ===>> L2(CDD),0,H2,0.653559052297596,H1,-0.0792362546326072,AX,-0.266058445027613,L1,0.0964129975679698
+setting magnet DAC
+current  : 3.491800
+requested: 3.491903
+Delta Dac: 0.000103
+Checking detector protection. dv=0.00010
+Magnet settling time: 1.049
+Get Checksum: 1041668763
+GetData ===>> L2(CDD),0,H2,2.62532131770416,H1,-0.129975644463204,AX,-0.510656768558338,L1,-0.00803558755229561
+setting magnet DAC
+current  : 3.491903
+requested: 3.492005
+Delta Dac: 0.000103
+Checking detector protection. dv=0.00010
+Magnet settling time: 1.049
+GetData ===>> L2(CDD),0,H2,9.29647889984649,H1,0.0408499479348436,AX,0.104851060006154,L1,0.222550257629789
+setting magnet DAC
+current  : 3.492005
+requested: 3.492108
+Delta Dac: 0.000103
+Checking detector protection. dv=0.00010
+Magnet settling time: 1.049
+GetData ===>> L2(CDD),0,H2,27.6358541317299,H1,0.0456720770674789,AX,0.0986642443822982,L1,0.0982576654348743
+setting magnet DAC
+current  : 3.492108
+requested: 3.492210
+Delta Dac: 0.000103
+Checking detector protection. dv=0.00010
+Magnet settling time: 1.049
+Get Checksum: 1041668763
+GetData ===>> L2(CDD),0,H2,61.4241875777116,H1,-0.39189537698687,AX,0.395447049981583,L1,-0.160192171227788
+setting magnet DAC
+current  : 3.492210
+requested: 3.492313
+Delta Dac: 0.000103
+Checking detector protection. dv=0.00010
+Magnet settling time: 1.049
+GetData ===>> L2(CDD),0,H2,113.208955641246,H1,-0.0548987675788472,AX,-0.55874463022528,L1,-0.0285550671179844
+setting magnet DAC
+current  : 3.492313
+requested: 3.492415
+Delta Dac: 0.000103
+Checking detector protection. dv=0.00010
+Magnet settling time: 1.049
+Get Checksum: 1041668763
+GetData ===>> L2(CDD),0.000314489402501528,H2,177.603936377017,H1,-0.104721078175851,AX,-0.00925491943711286,L1...
+setting magnet DAC
+current  : 3.492415
+requested: 3.492518
+Delta Dac: 0.000103
+Checking detector protection. dv=0.00010
+Magnet settling time: 1.049
+GetData ===>> L2(CDD),0.000628978828996695,H2,245.915453039378,H1,0.488721910316343,AX,-0.0862344438527654,L1,0...
+setting magnet DAC
+current  : 3.492518
+requested: 3.492621
+Delta Dac: 0.000103
+Checking detector protection. dv=0.00010
+Magnet settling time: 1.049
+GetData ===>> L2(CDD),0.000628978828996695,H2,314.772471586911,H1,0.0750646235111985,AX,0.17588771873882,L1,-0....
+setting magnet DAC
+current  : 3.492621
+requested: 3.492723
+Delta Dac: 0.000103
+Checking detector protection. dv=0.00010
+Magnet settling time: 1.049
+Get Checksum: 1041668763
+GetData ===>> L2(CDD),0.00251591589183427,H2,369.724583969517,H1,-0.02757576271381,AX,0.274889484490909,L1,0.00...
+setting magnet DAC
+current  : 3.492723
+requested: 3.492826
+Delta Dac: 0.000103
+Checking detector protection. dv=0.00010
+Magnet settling time: 1.049
+GetData ===>> L2(CDD),0.0144665373485284,H2,409.231569992153,H1,-0.0845169490506923,AX,-0.176036107194164,L1,-0...
+setting magnet DAC
+current  : 3.492826
+requested: 3.492928
+Delta Dac: 0.000103
+Checking detector protection. dv=0.00010
+Magnet settling time: 1.049
+GetData ===>> L2(CDD),0.055664997970188,H2,435.867484046526,H1,-0.00117044279952339,AX,0.26297206617606,L1,-0.0...
+setting magnet DAC
+current  : 3.492928
+requested: 3.493031
+Delta Dac: 0.000103
+Checking detector protection. dv=0.00010
+Magnet settling time: 1.049
+Get Checksum: 1041668763
+GetData ===>> L2(CDD),0.157876697337428,H2,451.070500905544,H1,-0.175432197526257,AX,-0.121972844351659,L1,0.09...
+setting magnet DAC
+current  : 3.493031
+requested: 3.493133
+Delta Dac: 0.000103
+Checking detector protection. dv=0.00010
+Magnet settling time: 1.049
+GetData ===>> L2(CDD),0.371743221374954,H2,461.889659443021,H1,-0.11574133387084,AX,0.251054795411541,L1,0.0523...
+setting magnet DAC
+current  : 3.493133
+requested: 3.493236
+Delta Dac: 0.000103
+Checking detector protection. dv=0.00010
+Magnet settling time: 1.049
+GetData ===>> L2(CDD),0.659537011025037,H2,464.910756480041,H1,-0.0675267856236189,AX,0.477278942883195,L1,0.14...
+setting magnet DAC
+current  : 3.493236
+requested: 3.493338
+Delta Dac: 0.000103
+Checking detector protection. dv=0.00010
+Magnet settling time: 1.049
+Get Checksum: 1041668763
+GetData ===>> L2(CDD),0.971572213450968,H2,465.784589595392,H1,0.138215701613295,AX,0.458711432688017,L1,-0.070...
+setting magnet DAC
+current  : 3.493338
+requested: 3.493441
+Delta Dac: 0.000103
+Checking detector protection. dv=0.00010
+Magnet settling time: 1.049
+GetData ===>> L2(CDD),1.25846412580232,H2,467.01005546534,H1,0.139823237558156,AX,-0.144652294762373,L1,0.10978...
+setting magnet DAC
+current  : 3.493441
+requested: 3.493544
+Delta Dac: 0.000103
+Checking detector protection. dv=0.00010
+Magnet settling time: 1.049
+Get Checksum: 1041668763
+GetData ===>> L2(CDD),1.42425397087046,H2,466.964153895451,H1,0.0335019879901686,AX,0.427537159276981,L1,0.0639...
+setting magnet DAC
+current  : 3.493544
+requested: 3.493646
+Delta Dac: 0.000103
+Checking detector protection. dv=0.00010
+Magnet settling time: 1.049
+GetData ===>> L2(CDD),1.53310633724353,H2,466.632501778642,H1,-0.15706617138073,AX,0.116537375804017,L1,0.02378...
+setting magnet DAC
+current  : 3.493646
+requested: 3.493749
+Delta Dac: 0.000103
+Checking detector protection. dv=0.00010
+Magnet settling time: 1.049
+GetData ===>> L2(CDD),1.55292658607661,H2,465.982738439366,H1,0.327234357893861,AX,-0.117161983127094,L1,0.0618...
+setting magnet DAC
+current  : 3.493749
+requested: 3.493851
+Delta Dac: 0.000103
+Checking detector protection. dv=0.00010
+Magnet settling time: 1.049
+Get Checksum: 1041668763
+GetData ===>> L2(CDD),1.50416265297464,H2,466.256796811729,H1,0.244089147232678,AX,0.138993831918541,L1,0.05583...
+setting magnet DAC
+current  : 3.493851
+requested: 3.493954
+Delta Dac: 0.000103
+Checking detector protection. dv=0.00010
+Magnet settling time: 1.049
+GetData ===>> L2(CDD),1.54474678929648,H2,467.199453916495,H1,-0.238792303321111,AX,0.425474191504471,L1,0.1538...
+setting magnet DAC
+current  : 3.493954
+requested: 3.494056
+Delta Dac: 0.000103
+Checking detector protection. dv=0.00010
+Magnet settling time: 1.049
+GetData ===>> L2(CDD),1.48371343332282,H2,465.966296908876,H1,-0.00737001762398525,AX,0.678335288361875,L1,-0.0...
+setting magnet DAC
+current  : 3.494056
+requested: 3.494159
+Delta Dac: 0.000103
+Checking detector protection. dv=0.00010
+Magnet settling time: 1.049
+Get Checksum: 1041668763
+GetData ===>> L2(CDD),1.29055196259953,H2,465.811699749858,H1,0.172663486762918,AX,0.177720992232958,L1,0.39552...
+setting magnet DAC
+current  : 3.494159
+requested: 3.494262
+Delta Dac: 0.000103
+Checking detector protection. dv=0.00010
+Magnet settling time: 1.049
+GetData ===>> L2(CDD),1.05556152882987,H2,466.458774246062,H1,0.283593712946401,AX,0.235241721605983,L1,-0.0742...
+setting magnet DAC
+current  : 3.494262
+requested: 3.494364
+Delta Dac: 0.000103
+Checking detector protection. dv=0.00010
+Magnet settling time: 1.049
+GetData ===>> L2(CDD),0.744778154038636,H2,465.943798334112,H1,-0.238562745233211,AX,0.21851223068006,L1,-0.085...
+setting magnet DAC
+current  : 3.494364
+requested: 3.494467
+Delta Dac: 0.000103
+Checking detector protection. dv=0.00010
+Magnet settling time: 1.049
+Get Checksum: 1041668763
+GetData ===>> L2(CDD),0.403195116649939,H2,463.609477198834,H1,0.007554952232864,AX,0.366796070641677,L1,0.1226...
+setting magnet DAC
+current  : 3.494467
+requested: 3.494569
+Delta Dac: 0.000103
+Checking detector protection. dv=0.00010
+Magnet settling time: 1.049
+GetData ===>> L2(CDD),0.19593154670814,H2,456.743628531059,H1,-0.190583905828921,AX,0.264347145374209,L1,0.3424...
+setting magnet DAC
+current  : 3.494569
+requested: 3.494672
+Delta Dac: 0.000103
+Checking detector protection. dv=0.00010
+Magnet settling time: 1.049
+GetData ===>> L2(CDD),0.102210319093661,H2,438.193741217392,H1,-0.23649671998352,AX,-0.10387471766289,L1,0.2908...
+setting magnet DAC
+current  : 3.494672
+requested: 3.494774
+Delta Dac: 0.000103
+Checking detector protection. dv=0.00010
+Magnet settling time: 1.049
+Get Checksum: 1041668763
+GetData ===>> L2(CDD),0.0468591855280759,H2,402.422051303847,H1,-0.0115030453712256,AX,0.0599402648995899,L1,0....
+setting magnet DAC
+current  : 3.494774
+requested: 3.494877
+Delta Dac: 0.000103
+Checking detector protection. dv=0.00010
+Magnet settling time: 1.049
+GetData ===>> L2(CDD),0.0257882106882439,H2,350.601027851688,H1,0.0922872348177611,AX,-0.00513084257217086,L1,0...
+setting magnet DAC
+current  : 3.494877
+requested: 3.494979
+Delta Dac: 0.000103
+Checking detector protection. dv=0.00010
+Magnet settling time: 1.049
+Get Checksum: 1041668763
+GetData ===>> L2(CDD),0.0169824620700482,H2,287.28735724055,H1,-0.129746060475273,AX,0.0319866444832291,L1,0.30...
+setting magnet DAC
+current  : 3.494979
+requested: 3.495082
+Delta Dac: 0.000103
+Checking detector protection. dv=0.00010
+Magnet settling time: 1.049
+GetData ===>> L2(CDD),0.00723326232793069,H2,216.859763771367,H1,0.146712707661979,AX,-0.361340091181501,L1,0.0...
+setting magnet DAC
+current  : 3.495082
+requested: 3.495185
+Delta Dac: 0.000103
+Checking detector protection. dv=0.00010
+Magnet settling time: 1.049
+GetData ===>> L2(CDD),0.00503183331926267,H2,151.828785700859,H1,0.23582095447581,AX,-0.0378938546269758,L1,0.0...
+setting magnet DAC
+current  : 3.495185
+requested: 3.495287
+Delta Dac: 0.000103
+Checking detector protection. dv=0.00010
+Magnet settling time: 1.049
+Get Checksum: 1041668763
+GetData ===>> L2(CDD),0.000943468279485503,H2,95.3667205618594,H1,-0.00231851521758607,AX,-0.20948050339851,L1,...
+setting magnet DAC
+current  : 3.495287
+requested: 3.495390
+Delta Dac: 0.000103
+Checking detector protection. dv=0.00010
+Magnet settling time: 1.049
+GetData ===>> L2(CDD),0.00188693677491381,H2,55.2904996144243,H1,0.106065545255804,AX,0.0271750376274155,L1,0.1...
+setting magnet DAC
+current  : 3.495390
+requested: 3.495492
+Delta Dac: 0.000103
+Checking detector protection. dv=0.00010
+Magnet settling time: 1.049
+GetData ===>> L2(CDD),0.00157244725244406,H2,29.3327242075342,H1,0.186213285998183,AX,-0.21016770483206,L1,-0.1...
+setting magnet DAC
+current  : 3.495492
+requested: 3.495595
+Delta Dac: 0.000103
+Checking detector protection. dv=0.00010
+Magnet settling time: 1.049
+Get Checksum: 1041668763
+GetData ===>> L2(CDD),0.00251591589183427,H2,14.5455881508095,H1,-0.663220093037892,AX,-0.128387288573419,L1,0....
+setting magnet DAC
+current  : 3.495595
+requested: 3.495697
+Delta Dac: 0.000103
+Checking detector protection. dv=0.00010
+Magnet settling time: 1.049
+GetData ===>> L2(CDD),0.00471734355685627,H2,7.28522612386567,H1,0.0364870899670687,AX,-0.124721897110455,L1,-0...
+setting magnet DAC
+current  : 3.495697
+requested: 3.495800
+Delta Dac: 0.000103
+Checking detector protection. dv=0.00010
+Magnet settling time: 1.049
+GetData ===>> L2(CDD),0.00912020241397181,H2,2.46996242492084,H1,-0.223870913963388,AX,-0.239945962242655,L1,0....
+result of _do_sweep=True
+result of _calculate_peak_center=([3.4926777555110222, 3.4937799599198396, 3.4948821643286569], [347.51105508505742, 467.20408956934079, 347.61026335385924], 3.4939482965931861, 467.20408956934079)
+Get Checksum: 1041668763
+new center pos Detector(H2) (Ar40) @ 3.49377995992
+GetHighVoltage ===>> 9000
+dac uncorrected for HV and deflection 3.49377995992
+update mftable H2 Ar40 3.49377995992 message=automated run peakcenter
+get initial guess parabolic
+get initial guess parabolic
+sweep finished
+get initial guess parabolic
+get initial guess parabolic
+dump mftable to /Users/obama/PychronDev/setupfiles/spectrometer/mftables/ic_mftable.csv
+add to repo msg=modified - automated run peakcenter
+locally archiving mftable
+setting magnet DAC
+current  : 3.495800
+requested: 3.493780
+Delta Dac: 0.002020
+Checking detector protection. dv=0.00202
+SetMagnetDAC 3.49377995992 ===>> OK
+Magnet settling time: 0.500
+setting integration time = 1.048576
+SetIntegrationTime 1.048576 ===>> OK
+flush and close file /Users/obama/PychronDev/data/isotopes/39/f33bf2-79e6-4d7c-a848-35d959b4cf04.h5
+finished measure script
+executed 240.38
+felix_ic_peak_hop.py completed successfully
+Measurement Finished
+08:21:10 -- ******* Measurement Finished *******
+Post Measurement Started felix_pump_ms.py
+08:21:10 -- ******* Post Measurement Started felix_pump_ms.py *******
+testing...
+no interpolation path defined
+executed 0
+Pumping spectrometer
+open () {'name': 'V'}
+opening name=V desc=---
+checking ownership. requestor=129.138.12.137
+check software interlocks V
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel True
+Open V ===>> OK
+GetValveState V ===>> OK
+change switch state (True, True)
+update switch state V True args=() kw={} ncanvase=4
+08:21:10 -- OPEN   VALVE-V (Felix Ion Pump)
+---------------------------------------- open V () result=[(True, True)], time=0.13 sec
+action=open, ok=True, locked=[False]
+executed 0
+felix_pump_ms.py completed successfully
+setting _ms_pumptime
+Post Measurement Finished
+08:21:11 -- ******* Post Measurement Finished *******
+$$$$$$$$$$$$$$$$$$$$ state at run end measurement
+state changed from measurement to success
+post measurement save measured=True aborted=False
+Set filtering
+setting fod for Ar40= {'filter_outliers': False, 'std_devs': 2, 'iterations': 1}
+setting fod for H2= {'filter_outliers': False, 'std_devs': 2, 'iterations': 1}
+setting fod for Ar40= {'filter_outliers': False, 'std_devs': 2, 'iterations': 1}
+setting fod for H1= {'filter_outliers': False, 'std_devs': 2, 'iterations': 1}
+setting fod for Ar40= {'filter_outliers': False, 'std_devs': 2, 'iterations': 1}
+setting fod for AX= {'filter_outliers': False, 'std_devs': 2, 'iterations': 1}
+setting fod for Ar40= {'filter_outliers': False, 'std_devs': 2, 'iterations': 1}
+setting fod for L1= {'filter_outliers': False, 'std_devs': 2, 'iterations': 1}
+persistence save...
+persistence save - db
+post measurement save
+5059659344 connecting to database sqlite:////Users/obama/PychronDev/.appdata/local_lab.db
+connected to db sqlite:////Users/obama/PychronDev/.appdata/local_lab.db
+create new session 5059659344
+close session 5059659344
+No database instance. Not saving post measurement to isotopedb database
+$$$$$$$$$$$$$$$ auto_save_detector_ic=False
+persistence save - dvc
+================= post measurement started
+create new session 4873042928
+close session 4873042928
+---------------- Experiment Queue saving disabled
+DVC saving peakcenter
+Get Checksum: 2094073170
+Smart pull ahead: 0 behind: 0
+Up-to-date with origin
+add to repo msg=modified - 1e2ad98a77a0f8b97e0df49be2474708cb221738.json
+add to repo msg=modified - -F-55.json
+add to repo msg=modified - -F-55.dat.json
+add to repo msg=modified - -F-55.blan.json
+add to repo msg=modified - -F-55.inte.json
+add to repo msg=modified - -F-55.icfa.json
+add to repo msg=modified - -F-55.base.json
+not at valid file /Users/obama/PychronDev/data/.dvc/repositories/IR960/ic-01/tags/-F-55.tags.json
+add to repo msg=modified - -F-55.peak.json
+add to repo msg=modified - -F-55.extr.json
+not at valid file /Users/obama/PychronDev/data/.dvc/repositories/IR960/ic-01/monitor/-F-55.moni.json
+commit message=<COLLECTION>
+add to repo msg=modified - -F-55.inte.json
+add to repo msg=modified - -F-55.base.json
+commit message=<ISOEVO> default collection fits
+add to repo msg=modified - -F-55.blan.json
+Get Checksum: 2094073170
+commit message=<BLANKS> preceding ba-01-F-522
+add to repo msg=modified - -F-55.icfa.json
+commit message=<ICFactor> default
+push repository <pychron.git_archive.repo_manager.GitRepoManager object at 0x16cfdc9b0>
+pushing to remote=origin, url=https://github.com
+no changes to meta repo
+Get Checksum: 2094073170
+create new session 4873042928
+add association IR960
+get identifier "ic-01-F"
+setting analysis irradiation position=<pychron.dvc.dvc_orm.IrradiationPositionTbl object at 0x15b4821d0>
+close session 4873042928
+================= post measurement finished
+08:21:21 -- ******* Post Run Check *******
+loading queue conditionals post_run_actions
+loading system conditionals post_run_actions
+loading conditionals from /Users/obama/PychronDev/setupfiles/spectrometer/default_conditionals.yaml
+loading queue conditionals post_run_terminations
+loading system conditionals post_run_terminations
+loading conditionals from /Users/obama/PychronDev/setupfiles/spectrometer/default_conditionals.yaml
+Checking default post run terminations n=1
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+08:21:21 -- ******* Post Run Check Passed *******
+08:21:21 -- Automated run ic-01-F-55 success duration: 623.415 s
+----------------- finish -----------------
+----------------- stop -----------------
+retroactive repository identifiers disabled
+finish run. runs completed=8
+update duration runid=ic-01-F-55, duration=623.414535999, md5=87d38054
+loading script "felix_analysis400_120.py"
+loading script "felix_pump_ms.py"
+loading script "felix_air_x2.py"
+loading script "felix_pump_extraction_line.py"
+testing...
+no interpolation path defined
+executed 624.242112
+script duration name:analysis400_120 seconds:624.0
+loading script "felix_analysis400_120.py"
+loading script "felix_pump_ms.py"
+loading script "felix_air_x2.py"
+loading script "felix_pump_extraction_line.py"
+testing...
+no interpolation path defined
+executed 0
+loading script "felix_analysis400_120.py"
+loading script "felix_pump_ms.py"
+loading script "felix_air_x2.py"
+loading script "felix_pump_extraction_line.py"
+testing...
+no interpolation path defined
+calculate duration
+testing...
+no interpolation path defined
+executed 0
+calculate duration
+testing...
+no interpolation path defined
+executed 0
+calculate duration
+testing...
+no interpolation path defined
+executed 32.0
+calculate duration
+testing...
+no interpolation path defined
+executed 34.0
+calculate duration
+testing...
+no interpolation path defined
+executed 2.0
+calculate duration
+testing...
+no interpolation path defined
+executed 34.0
+calculate duration
+testing...
+no interpolation path defined
+executed 34.0
+calculate duration
+testing...
+no interpolation path defined
+executed 34.0
+executed 174.0
+script duration name:air_x2 seconds:174.0
+loading script "felix_analysis400_120.py"
+loading script "felix_pump_ms.py"
+loading script "felix_air_x2.py"
+loading script "felix_pump_extraction_line.py"
+testing...
+no interpolation path defined
+calculate duration
+testing...
+no interpolation path defined
+executed 4.0
+executed 4.0
+Script duration 798.0
+Run total estimated duration= 799.000
+analysis400_120 in script context. using previous estimated duration
+script duration name:analysis400_120 seconds:624.0
+pump_ms in script context. using previous estimated duration
+loading script "felix_analysis400_120.py"
+loading script "felix_pump_ms.py"
+loading script "felix_diode.py"
+loading script "felix_pump_extraction_line.py"
+testing...
+no interpolation path defined
+calculate duration
+testing...
+no interpolation path defined
+executed 0
+calculate duration
+testing...
+no interpolation path defined
+executed 0
+calculate duration
+testing...
+no interpolation path defined
+executed 42.0
+executed 42.0
+script duration name:diode seconds:42.0
+pump_extraction_line in script context. using previous estimated duration
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+diode in script context. using previous estimated duration
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+air_x2 in script context. using previous estimated duration
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+loading script "felix_analysis400_120.py"
+loading script "felix_pump_ms.py"
+loading script "felix_cocktail_x3.py"
+loading script "felix_pump_extraction_line.py"
+testing...
+no interpolation path defined
+calculate duration
+testing...
+no interpolation path defined
+executed 0
+calculate duration
+testing...
+no interpolation path defined
+executed 0
+calculate duration
+testing...
+no interpolation path defined
+executed 32.0
+calculate duration
+testing...
+no interpolation path defined
+executed 34.0
+calculate duration
+testing...
+no interpolation path defined
+executed 2.0
+calculate duration
+testing...
+no interpolation path defined
+executed 34.0
+calculate duration
+testing...
+no interpolation path defined
+executed 34.0
+calculate duration
+testing...
+no interpolation path defined
+executed 34.0
+calculate duration
+testing...
+no interpolation path defined
+executed 34.0
+calculate duration
+testing...
+no interpolation path defined
+executed 34.0
+executed 244.0
+script duration name:cocktail_x3 seconds:244.0
+Script duration 868.0
+Run total estimated duration= 869.000
+loading script "felix_ic_peak_hop.py"
+loading script "felix_pump_ms.py"
+loading script "felix_air_x1.py"
+loading script "felix_pump_extraction_line.py"
+testing...
+no interpolation path defined
+executed 135.88
+script duration name:ic_peak_hop seconds:136.0
+loading script "felix_ic_peak_hop.py"
+loading script "felix_pump_ms.py"
+loading script "felix_air_x1.py"
+loading script "felix_pump_extraction_line.py"
+testing...
+no interpolation path defined
+calculate duration
+testing...
+no interpolation path defined
+executed 0
+calculate duration
+testing...
+no interpolation path defined
+executed 0
+calculate duration
+testing...
+no interpolation path defined
+executed 32.0
+calculate duration
+testing...
+no interpolation path defined
+executed 34.0
+calculate duration
+testing...
+no interpolation path defined
+executed 2.0
+calculate duration
+testing...
+no interpolation path defined
+executed 34.0
+executed 102.0
+script duration name:air_x1 seconds:102.0
+Script duration 238.0
+Run total estimated duration= 239.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+cocktail_x3 in script context. using previous estimated duration
+script duration name:cocktail_x3 seconds:244.0
+Script duration 868.0
+Run total estimated duration= 869.000
+ic_peak_hop in script context. using previous estimated duration
+script duration name:ic_peak_hop seconds:136.0
+air_x1 in script context. using previous estimated duration
+script duration name:air_x1 seconds:102.0
+Script duration 238.0
+Run total estimated duration= 239.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:cocktail_x3 seconds:244.0
+Script duration 868.0
+Run total estimated duration= 869.000
+script duration name:ic_peak_hop seconds:136.0
+script duration name:air_x1 seconds:102.0
+Script duration 238.0
+Run total estimated duration= 239.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:cocktail_x3 seconds:244.0
+Script duration 868.0
+Run total estimated duration= 869.000
+script duration name:ic_peak_hop seconds:136.0
+script duration name:air_x1 seconds:102.0
+Script duration 238.0
+Run total estimated duration= 239.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:cocktail_x3 seconds:244.0
+Script duration 868.0
+Run total estimated duration= 869.000
+script duration name:ic_peak_hop seconds:136.0
+script duration name:air_x1 seconds:102.0
+Script duration 238.0
+Run total estimated duration= 239.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:cocktail_x3 seconds:244.0
+Script duration 868.0
+Run total estimated duration= 869.000
+script duration name:ic_peak_hop seconds:136.0
+script duration name:air_x1 seconds:102.0
+Script duration 238.0
+Run total estimated duration= 239.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:cocktail_x3 seconds:244.0
+Script duration 868.0
+Run total estimated duration= 869.000
+script duration name:ic_peak_hop seconds:136.0
+script duration name:air_x1 seconds:102.0
+Script duration 238.0
+Run total estimated duration= 239.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:cocktail_x3 seconds:244.0
+Script duration 868.0
+Run total estimated duration= 869.000
+script duration name:ic_peak_hop seconds:136.0
+script duration name:air_x1 seconds:102.0
+Script duration 238.0
+Run total estimated duration= 239.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:cocktail_x3 seconds:244.0
+Script duration 868.0
+Run total estimated duration= 869.000
+script duration name:ic_peak_hop seconds:136.0
+script duration name:air_x1 seconds:102.0
+Script duration 238.0
+Run total estimated duration= 239.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:cocktail_x3 seconds:244.0
+Script duration 868.0
+Run total estimated duration= 869.000
+script duration name:ic_peak_hop seconds:136.0
+script duration name:air_x1 seconds:102.0
+Script duration 238.0
+Run total estimated duration= 239.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:cocktail_x3 seconds:244.0
+Script duration 868.0
+Run total estimated duration= 869.000
+script duration name:ic_peak_hop seconds:136.0
+script duration name:air_x1 seconds:102.0
+Script duration 238.0
+Run total estimated duration= 239.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+nruns=210 before=0.0, run_dur=143524.0, btw=12540.0
+write rem/ex queues
+/Users/obama/PychronDev/experiments/rem/CurrentExperiment.rem.txt
+/Users/obama/PychronDev/experiments/rem/CurrentExperiment.ex.txt
+doing event level: 3
